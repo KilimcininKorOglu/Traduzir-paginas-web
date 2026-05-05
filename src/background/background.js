@@ -192,8 +192,6 @@ chrome.runtime.onInstalled.addListener((details) => {
     tabsCreate(chrome.runtime.getURL("/options/options.html"));
     twpConfig.onReady(async () => {
       if (chrome.i18n.getUILanguage() === "zh-CN") {
-        twpConfig.set("pageTranslatorService", "bing");
-        twpConfig.set("textTranslatorService", "bing");
       }
     });
   } else if (
@@ -244,26 +242,10 @@ chrome.runtime.onInstalled.addListener((details) => {
       translationCache.deleteTranslationCache();
     });
     twpConfig.onReady(async () => {
-      twpConfig.set(
-        "textTranslatorService",
-        twpConfig.get("enabledServices")[0]
-      );
-    });
-    twpConfig.onReady(async () => {
       twpConfig.set("proxyServers", {});
     });
   }
 
-  twpConfig.onReady(async () => {
-    if (platformInfo.isMobile.any) {
-      const enabledServices = twpConfig.get("enabledServices");
-      const index = enabledServices.indexOf("deepl");
-      if (index !== -1) {
-        enabledServices.splice(index, 1);
-        twpConfig.set("enabledServices", enabledServices);
-      }
-    }
-  });
 });
 
 function resetPageAction(tabId, forceShow = false) {
@@ -980,22 +962,6 @@ if (typeof chrome.commands !== "undefined") {
             tabs[0].id,
             {
               action: "TranslateSelectedText",
-            },
-            checkedLastError
-          )
-      );
-    } else if (command === "hotkey-swap-page-translation-service") {
-      chrome.tabs.query(
-        {
-          active: true,
-          currentWindow: true,
-        },
-        (tabs) =>
-          chrome.tabs.sendMessage(
-            tabs[0].id,
-            {
-              action: "swapTranslationService",
-              newServiceName: twpConfig.swapPageTranslationService(),
             },
             checkedLastError
           )
