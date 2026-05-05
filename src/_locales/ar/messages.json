@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "غير المكان"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "إعدادات خاصة بالموقع"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "اللغة المستهدفة"
+  },
+  "lblSiteSpecificService": {
+    "message": "خدمة الترجمة"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "القاموس المخصص"
+  },
+  "lblUseGlobalSetting": {
+    "message": "استخدام الإعداد العام"
+  },
+  "lblSiteSpecificSave": {
+    "message": "حفظ"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "إلغاء"
   }
 }

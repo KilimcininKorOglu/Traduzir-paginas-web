@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "위치 변경"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "사이트별 설정"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "대상 언어"
+  },
+  "lblSiteSpecificService": {
+    "message": "번역 서비스"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "사용자 사전"
+  },
+  "lblUseGlobalSetting": {
+    "message": "전역 설정 사용"
+  },
+  "lblSiteSpecificSave": {
+    "message": "저장"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "취소"
   }
 }

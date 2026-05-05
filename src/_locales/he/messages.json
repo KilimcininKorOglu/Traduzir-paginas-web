@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "שנה מיקום"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "הגדרות ספציפ��ות לאתר"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "שפת יעד"
+  },
+  "lblSiteSpecificService": {
+    "message": "שירות תרגום"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "מילון מותאם אישית"
+  },
+  "lblUseGlobalSetting": {
+    "message": "השתמש בהגדרה הכללית"
+  },
+  "lblSiteSpecificSave": {
+    "message": "שמור"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "ביטול"
   }
 }

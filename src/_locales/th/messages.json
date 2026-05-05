@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "เปลี่ยนตำแหน่ง"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "การตั้งค่าเฉพาะเว็บไซต์"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "ภาษาเป้าหมาย"
+  },
+  "lblSiteSpecificService": {
+    "message": "บริการแปล"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "พจนานุกรมที่กำหนดเอง"
+  },
+  "lblUseGlobalSetting": {
+    "message": "ใช้การตั้งค่าทั่วไป"
+  },
+  "lblSiteSpecificSave": {
+    "message": "บันทึก"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "ยกเลิก"
   }
 }

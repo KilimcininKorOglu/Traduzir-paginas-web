@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Zmień pozycję"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Ustawienia witryny"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Język docelowy"
+  },
+  "lblSiteSpecificService": {
+    "message": "Usługa tłumaczenia"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Słownik niestandardowy"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Użyj ustawienia globalnego"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Zapisz"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Anuluj"
   }
 }

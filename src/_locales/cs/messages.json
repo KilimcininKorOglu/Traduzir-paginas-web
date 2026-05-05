@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Změň pozici"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Nastavení pro web"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Cílový jazyk"
+  },
+  "lblSiteSpecificService": {
+    "message": "Překladová služba"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Vlastní slovník"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Použít globální nastavení"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Uložit"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Zrušit"
   }
 }

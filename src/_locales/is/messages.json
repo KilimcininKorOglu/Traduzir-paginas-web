@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Breyta staðsetningu"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Vefsvæðisbundnar stillingar"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Markmál"
+  },
+  "lblSiteSpecificService": {
+    "message": "Þýðingaþjónusta"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Sérsniðin orðabók"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Nota almenna stillingu"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Vista"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Hætta við"
   }
 }

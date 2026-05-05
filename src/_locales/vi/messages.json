@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Thay đổi vị trí"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Cài đặt theo trang web"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Ngôn ngữ đích"
+  },
+  "lblSiteSpecificService": {
+    "message": "Dịch vụ dịch thuật"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Từ điển tùy chỉnh"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Sử dụng cài đặt chung"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Lưu"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Hủy"
   }
 }

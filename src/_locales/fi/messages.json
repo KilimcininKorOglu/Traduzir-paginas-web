@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Vaihda asentoa"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Sivustokohtaiset asetukset"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Kohdekieli"
+  },
+  "lblSiteSpecificService": {
+    "message": "Käännöspalvelu"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Mukautettu sanakirja"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Käytä yleistä asetusta"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Tallenna"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Peruuta"
   }
 }

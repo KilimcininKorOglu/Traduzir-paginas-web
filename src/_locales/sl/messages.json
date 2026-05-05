@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Spremenite položaj"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Nastavitve za spletno mesto"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Ciljni jezik"
+  },
+  "lblSiteSpecificService": {
+    "message": "Storitev prevajanja"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Slovar po meri"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Uporabi globalno nastavitev"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Shrani"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Prekliči"
   }
 }

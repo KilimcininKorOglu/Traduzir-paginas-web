@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "অবস্থান পরিবর্তন"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "সাইট-নির্দিষ্ট সেটিংস"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "লক্ষ্য ভাষা"
+  },
+  "lblSiteSpecificService": {
+    "message": "অনুবাদ পরিষেবা"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "কাস্টম অভিধান"
+  },
+  "lblUseGlobalSetting": {
+    "message": "গ্লোবাল সেটিং ব্যবহার করুন"
+  },
+  "lblSiteSpecificSave": {
+    "message": "সংরক্ষণ"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "বাতিল"
   }
 }

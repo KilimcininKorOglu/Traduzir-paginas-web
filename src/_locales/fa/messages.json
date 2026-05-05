@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "تغییر موقعیت"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "تنظیمات مخصو�� سایت"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "زبان مقصد"
+  },
+  "lblSiteSpecificService": {
+    "message": "سرویس ترجمه"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "دیکشنری سفارشی"
+  },
+  "lblUseGlobalSetting": {
+    "message": "استفاده از تنظیمات عمومی"
+  },
+  "lblSiteSpecificSave": {
+    "message": "ذخیره"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "لغو"
   }
 }

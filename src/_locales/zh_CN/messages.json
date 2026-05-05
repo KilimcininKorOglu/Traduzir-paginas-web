@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "改变位置"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "网站特定设置"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "目标语言"
+  },
+  "lblSiteSpecificService": {
+    "message": "翻译服务"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "自定义词典"
+  },
+  "lblUseGlobalSetting": {
+    "message": "使用全局设置"
+  },
+  "lblSiteSpecificSave": {
+    "message": "保存"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "取消"
   }
 }

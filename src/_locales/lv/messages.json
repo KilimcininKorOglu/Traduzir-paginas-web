@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Mainiet pozīciju"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Vietnes iestatījumi"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Mērķa valoda"
+  },
+  "lblSiteSpecificService": {
+    "message": "Tulkošanas pakalpojums"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Pielāgota vārdnīca"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Izmantot globālo iestatījumu"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Saglabāt"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Atcelt"
   }
 }

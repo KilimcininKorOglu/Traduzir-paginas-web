@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Промени позицията"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Настройки за сайта"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Целеви език"
+  },
+  "lblSiteSpecificService": {
+    "message": "Услуга за превод"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Потребителски речник"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Използвай глобалната настройка"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Запази"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Отказ"
   }
 }

@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Αλλαγή θέσης"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Ρυθμίσεις ιστότοπου"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Γλώσσα στόχος"
+  },
+  "lblSiteSpecificService": {
+    "message": "Υπηρεσία μετάφρασης"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Προσαρμοσμένο λεξικό"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Χρήση γενικής ρύθμισης"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Αποθήκευση"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Ακύρωση"
   }
 }

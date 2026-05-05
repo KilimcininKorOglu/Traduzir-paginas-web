@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Змінити позицію"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Налаштування для сайту"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Цільова мова"
+  },
+  "lblSiteSpecificService": {
+    "message": "Сер��іс перекладу"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Користувацький словник"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Використовувати глобальне налаштування"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Зберегти"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Скасувати"
   }
 }

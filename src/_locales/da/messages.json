@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Skift stilling"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Webstedsspecifikke indstillinger"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Målsprog"
+  },
+  "lblSiteSpecificService": {
+    "message": "Oversættelsestjeneste"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Brugerdefineret ordbog"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Brug global indstilling"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Gem"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Annuller"
   }
 }

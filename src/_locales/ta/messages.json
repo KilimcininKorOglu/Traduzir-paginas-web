@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "நிலையை மாற்றவும்"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "தளத்திற்கான அமைப்புகள்"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "இலக்கு மொழி"
+  },
+  "lblSiteSpecificService": {
+    "message": "மொழிபெயர்ப்பு சேவை"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "தனிப்பயன் அகராதி"
+  },
+  "lblUseGlobalSetting": {
+    "message": "உலகளாவிய அமைப்பைப் பயன்படுத்து"
+  },
+  "lblSiteSpecificSave": {
+    "message": "சேமி"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "ரத்து"
   }
 }

@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Schimbă poziția"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Setări specifice site-ului"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Limba țintă"
+  },
+  "lblSiteSpecificService": {
+    "message": "Serviciu de traducere"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Dicționar personalizat"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Folosește setarea globală"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Salvează"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Anulează"
   }
 }

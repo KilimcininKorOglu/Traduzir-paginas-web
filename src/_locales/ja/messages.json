@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "位置を変更"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "��イト固有の設定"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "対象言語"
+  },
+  "lblSiteSpecificService": {
+    "message": "翻訳サービス"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "カスタム辞書"
+  },
+  "lblUseGlobalSetting": {
+    "message": "グローバル設定を使用"
+  },
+  "lblSiteSpecificSave": {
+    "message": "保存"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "キャンセル"
   }
 }

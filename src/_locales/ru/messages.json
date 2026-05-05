@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Изменить положение"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Настройки для сайта"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Целевой язык"
+  },
+  "lblSiteSpecificService": {
+    "message": "Сервис перевода"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Пользовательский словарь"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Использовать глобальную настройку"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Сохранить"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Отмена"
   }
 }

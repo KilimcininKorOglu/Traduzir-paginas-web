@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Verander positie"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Sitespecifieke instellingen"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Doeltaal"
+  },
+  "lblSiteSpecificService": {
+    "message": "Vertaaldienst"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Aangepast woordenboek"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Globale instelling gebruiken"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Opslaan"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Annuleren"
   }
 }

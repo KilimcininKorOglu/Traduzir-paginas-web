@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "ئورۇننى ئۆزگەرتىش"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "تور بېكەتكە خاس تەڭشەكلەر"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "نىشان تىل"
+  },
+  "lblSiteSpecificService": {
+    "message": "تەرجىمە مۇلازىمىتى"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "ئىختىيارى لۇغەت"
+  },
+  "lblUseGlobalSetting": {
+    "message": "ئومۇمىي تەڭشەكنى ئىشلىتىش"
+  },
+  "lblSiteSpecificSave": {
+    "message": "ساقلاش"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "بىكار قىلىش"
   }
 }

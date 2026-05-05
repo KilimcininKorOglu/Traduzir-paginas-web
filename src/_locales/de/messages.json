@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Position ändern"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Website-spezifische Einstellungen"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Zielsprache"
+  },
+  "lblSiteSpecificService": {
+    "message": "Übersetzungsdienst"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Benutzerwörterbuch"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Globale Einstellung verwenden"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Speichern"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Abbrechen"
   }
 }

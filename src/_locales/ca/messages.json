@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Canvia de posició"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Configuració específica del lloc"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Idioma de destí"
+  },
+  "lblSiteSpecificService": {
+    "message": "Servei de traducció"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Diccionari personalitzat"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Utilitza la configuració global"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Desa"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Cancel·la"
   }
 }

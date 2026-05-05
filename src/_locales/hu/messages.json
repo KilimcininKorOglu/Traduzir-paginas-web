@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Pozíció módosítása"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Webhelyspecifikus beállítások"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Célnyelv"
+  },
+  "lblSiteSpecificService": {
+    "message": "Fordítási szolgáltatás"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Egyéni szótár"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Globális beállítás használata"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Mentés"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Mégse"
   }
 }

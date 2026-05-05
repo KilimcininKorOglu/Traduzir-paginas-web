@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "स्थिति बदलें"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "साइट-विशिष्ट सेटिंग्स"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "लक्ष्य भाषा"
+  },
+  "lblSiteSpecificService": {
+    "message": "अनुवाद सेवा"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "कस्टम शब्दकोश"
+  },
+  "lblUseGlobalSetting": {
+    "message": "वैश्विक सेटिंग का उपयोग करें"
+  },
+  "lblSiteSpecificSave": {
+    "message": "सहेजें"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "रद्द करें"
   }
 }

@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Change position"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Saytqa tiyisli sazlamalar"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Maqset til"
+  },
+  "lblSiteSpecificService": {
+    "message": "Awdarma xizmeti"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Arnawlı soʻzlik"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Ulıwma sazlamanı qollanıw"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Saqlaw"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Bийкар etиw"
   }
 }

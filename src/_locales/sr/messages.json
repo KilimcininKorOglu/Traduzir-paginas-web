@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Промена позиције"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Подешавања за сајт"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Циљни језик"
+  },
+  "lblSiteSpecificService": {
+    "message": "Преводилачка услуга"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Прилагођени речник"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Користи глобално подешавање"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Сачувај"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "Откажи"
   }
 }
