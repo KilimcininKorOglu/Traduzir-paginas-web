@@ -74,9 +74,6 @@
   "optionPopupThreeFingers": {
     "message": "जब मैं स्क्रीन पर तीन उंगलियां छूता हूं"
   },
-  "msgOpenOnYandexTranslator": {
-    "message": "यैंडेक्स अनुवाद में खोलें"
-  },
   "lblOthers": {
     "message": "अन्य"
   },
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "लागू"
-  },
-  "swapTranslationService": {
-    "message": "अनुवाद सेवाओं के बीच स्विच करें"
-  },
-  "swapPopup": {
-    "message": "सरल और जटिल इंटरफ़ेस के बीच स्विच करें"
   },
   "lblTranslateInterface": {
     "message": "इंटरफ़ेस का अनुवाद करें"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "गोपनीयता"
   },
-  "selectToEnableTranslationService": {
-    "message": "उन अनुवाद सेवाओं का चयन करें जिनका आप उपयोग करना चाहते हैं"
-  },
-  "useAlternativeService": {
-    "message": "यदि वर्तमान लक्ष्य भाषा चयनित अनुवाद सेवा द्वारा समर्थित नहीं है तो मौन रूप से वैकल्पिक अनुवाद सेवा का उपयोग करें"
-  },
   "msgDefaultLanguage": {
     "message": "डिफ़ॉल्ट भाषा"
   },
   "msgExtUILanguage": {
     "message": "एक्सटेंशन यूजर इंटरफेस भाषा"
-  },
-  "msgSetDeepLAlert": {
-    "message": "क्या आप वाकई अनुवाद सेवा को डीपएल पर सेट करना चाहते हैं?\nएक नया टैब खुलेगा और अनुवाद वहां होगा।"
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "यह टैब इसलिए खुला क्योंकि आपने डीपएल का उपयोग करके चयनित टेक्स्ट का अनुवाद करने के लिए क्लिक किया था।"
   },
   "msgDontShowAgain": {
     "message": "दोबारा मत दिखाना"

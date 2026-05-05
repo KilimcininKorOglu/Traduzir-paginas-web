@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Käännä verkkosivu lennossa Googlella tai Yandexilla."
+    "message": "Käännä verkkosivu lennossa Googlellailla."
   },
   "pageActionTitle": {
     "message": "Käännä tämä sivu"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Kolmen sormen kosketuksella"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Avaa Yandex translatessa"
   },
   "lblOthers": {
     "message": "Muut"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Käytä"
-  },
-  "swapTranslationService": {
-    "message": "Vaihda käännöspalveluiden välillä"
-  },
-  "swapPopup": {
-    "message": "Vaihda yksinkertaisen ja monimutkaisen käyttöliittymän välillä"
   },
   "lblTranslateInterface": {
     "message": "Auta käyttöliittymän kääntämisessä"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Yksityisyys"
   },
-  "selectToEnableTranslationService": {
-    "message": "Valitse käännöspalvelut, joita haluat käyttää"
-  },
-  "useAlternativeService": {
-    "message": "Käytä hiljaa vaihtoehtoista käännöspalvelua, jos valittu käännöspalvelu ei tue nykyistä kohdekieltä"
-  },
   "msgDefaultLanguage": {
     "message": "Oletuskieli"
   },
   "msgExtUILanguage": {
     "message": "Laajennuksen käyttöliittymän kieli"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Haluatko varmasti asettaa käännöspalvelun DeepL:ksi?\nUusi välilehti avautuu, ja käännös tapahtuu siellä."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Tämä välilehti avautui, koska klikkasit kääntääksesi valitun tekstin DeepL:llä."
   },
   "msgDontShowAgain": {
     "message": "Älä näytä uudelleen"

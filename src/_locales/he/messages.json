@@ -74,9 +74,6 @@
   "optionPopupThreeFingers": {
     "message": "בלחיצה על המסך עם שלוש אצבעות"
   },
-  "msgOpenOnYandexTranslator": {
-    "message": "פתח בתרגום יאנדקס"
-  },
   "lblOthers": {
     "message": "שונות"
   },
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "החלה"
-  },
-  "swapTranslationService": {
-    "message": "מעבר בין שירותי תרגום"
-  },
-  "swapPopup": {
-    "message": "מעבר בין ממשק פשוט למורכב"
   },
   "lblTranslateInterface": {
     "message": "תרגם את הממשק"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "פרטיות"
   },
-  "selectToEnableTranslationService": {
-    "message": "בחר את שירותי התרגום שבהם ברצונך להשתמש"
-  },
-  "useAlternativeService": {
-    "message": "השתמש בשקט בשירות תרגום חלופי אם שפת היעד הנוכחית אינה נתמכת על ידי שירות התרגום שנבחר"
-  },
   "msgDefaultLanguage": {
     "message": "שפה ברירת מחדל"
   },
   "msgExtUILanguage": {
     "message": "שפת ממשק המשתמש של ההרחבה"
-  },
-  "msgSetDeepLAlert": {
-    "message": "האם אתה בטוח שברצונך להגדיר את שירות התרגום ל-DeepL?\nכרטיסייה חדשה תיפתח, והתרגום יתבצע שם."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "כרטיסייה זו נפתחה כי לחצת כדי לתרגם טקסט נבחר באמצעות DeepL."
   },
   "msgDontShowAgain": {
     "message": "אל תראה שוב"

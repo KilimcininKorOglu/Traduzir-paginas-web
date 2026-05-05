@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Lapu tulkošana reāllaikā, izmantojot Google vai Yandex dzinējus."
+    "message": "Lapu tulkošana reāllaikā, izmantojot Google dzinējus."
   },
   "pageActionTitle": {
     "message": "Tulkot šo lapu"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Kad es pieskaros ekrānam ar trim pirkstiem"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Atvērt Yandex tulkot"
   },
   "lblOthers": {
     "message": "Citi"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Apstiprināt"
-  },
-  "swapTranslationService": {
-    "message": "Pārslēgties starp tulkošanas pakalpojumiem"
-  },
-  "swapPopup": {
-    "message": "Pārslēdzieties starp vienkāršu un sarežģītu saskarni"
   },
   "lblTranslateInterface": {
     "message": "Palīdziet šī paplašinājuma tulkošanā"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Privātums"
   },
-  "selectToEnableTranslationService": {
-    "message": "Atlasiet tulkošanas pakalpojumus, kurus vēlaties izmantot"
-  },
-  "useAlternativeService": {
-    "message": "Klusi izmantojiet alternatīvu tulkošanas pakalpojumu, ja atlasītais tulkošanas pakalpojums neatbalsta pašreizējo mērķvalodu"
-  },
   "msgDefaultLanguage": {
     "message": "Noklusējuma valoda"
   },
   "msgExtUILanguage": {
     "message": "Paplašinājuma lietotāja interfeisa valoda"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Vai tiešām vēlaties iestatīt tulkošanas pakalpojumu DeepL?\nTiks atvērta jauna cilne, kurā notiks tulkojums."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Šī cilne tika atvērta, jo jūs noklikšķinājāt, lai tulkotu atlasīto tekstu, izmantojot DeepL."
   },
   "msgDontShowAgain": {
     "message": "Nerādīt vēlreiz"

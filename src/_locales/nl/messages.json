@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Vertaal uw pagina in realtime met Google of Yandex."
+    "message": "Vertaal uw pagina in realtime met Google."
   },
   "pageActionTitle": {
     "message": "Vertaal deze pagina"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Als ik drie vingers op het scherm aanraak"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Openen in yandex vertalen"
   },
   "lblOthers": {
     "message": "Anderen"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Van toepassing zijn"
-  },
-  "swapTranslationService": {
-    "message": "Schakel tussen vertaaldiensten"
-  },
-  "swapPopup": {
-    "message": "Schakel tussen eenvoudige en complexe interface"
   },
   "lblTranslateInterface": {
     "message": "Vertaal de interface"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Privacy"
   },
-  "selectToEnableTranslationService": {
-    "message": "Selecteer de vertaaldiensten die u wilt gebruiken"
-  },
-  "useAlternativeService": {
-    "message": "Gebruik stilzwijgend een alternatieve vertaalservice als de huidige doeltaal niet wordt ondersteund door de geselecteerde vertaalservice"
-  },
   "msgDefaultLanguage": {
     "message": "Standaard taal"
   },
   "msgExtUILanguage": {
     "message": "Taal van de gebruikersinterface van de extensie"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Weet u zeker dat u de vertaalservice op DeepL wilt instellen?\nEr wordt een nieuw tabblad geopend en daar vindt de vertaling plaats."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Dit tabblad is geopend omdat u hebt geklikt om de geselecteerde tekst te vertalen met DeepL."
   },
   "msgDontShowAgain": {
     "message": "Niet meer laten zien"

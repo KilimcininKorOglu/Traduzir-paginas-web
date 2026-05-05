@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Oversett siden din i sanntid ved hjelp av Google eller Yandex."
+    "message": "Oversett siden din i sanntid ved hjelp av Google."
   },
   "pageActionTitle": {
     "message": "Oversett denne siden"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Når jeg berører tre fingre på skjermen"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Åpne i yandex translate"
   },
   "lblOthers": {
     "message": "Andre"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Søke om"
-  },
-  "swapTranslationService": {
-    "message": "Bytt mellom oversettelsestjenester"
-  },
-  "swapPopup": {
-    "message": "Bytt mellom enkelt og komplekst grensesnitt"
   },
   "lblTranslateInterface": {
     "message": "Oversett grensesnittet"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Personvern"
   },
-  "selectToEnableTranslationService": {
-    "message": "Velg oversettelsestjenestene du vil bruke"
-  },
-  "useAlternativeService": {
-    "message": "Bruk en alternativ oversettelsestjeneste stille hvis gjeldende målspråk ikke støttes av den valgte oversettelsestjenesten"
-  },
   "msgDefaultLanguage": {
     "message": "Standardspråk"
   },
   "msgExtUILanguage": {
     "message": "Språk for utvidelse av brukergrensesnitt"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Er du sikker på at du vil sette oversettelsestjenesten til DeepL?\nEn ny fane åpnes, og oversettelsen vil finne sted der."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Denne fanen åpnet fordi du klikket for å oversette valgt tekst ved hjelp av DeepL."
   },
   "msgDontShowAgain": {
     "message": "Ikke vis igjen"

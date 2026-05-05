@@ -74,9 +74,6 @@
   "optionPopupThreeFingers": {
     "message": "Amikor 3 ujjal érintem a képernyőt"
   },
-  "msgOpenOnYandexTranslator": {
-    "message": "Megnyitás Yandex fordítóban"
-  },
   "lblOthers": {
     "message": "Egyebek"
   },
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Alkalmaz"
-  },
-  "swapTranslationService": {
-    "message": "Fordító szolgáltatások közötti váltás"
-  },
-  "swapPopup": {
-    "message": "Váltás az egyszerű és az összetett felület között"
   },
   "lblTranslateInterface": {
     "message": "A felület fordítása"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Adatvédelem"
   },
-  "selectToEnableTranslationService": {
-    "message": "Válassza ki a használni kívánt fordítómotort"
-  },
-  "useAlternativeService": {
-    "message": "Használjon a háttérben egy alternatív fordítómotort, ha az aktuális célnyelvet a kiválasztott motor nem támogatja"
-  },
   "msgDefaultLanguage": {
     "message": "Alapértelmezett nyelv"
   },
   "msgExtUILanguage": {
     "message": "Bővítmény felhasználói felületének nyelve"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Biztos, hogy a fordítási szolgáltatást a DeepL-re szeretné beállítani?\nEgy új lap fog megnyílni, és a fordítás ott fog megtörténni."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Ez a lap azért nyílt meg, mert rákattintott a kijelölt szöveg DeepL-leé történő lefordításához."
   },
   "msgDontShowAgain": {
     "message": "Ne mutassa újra"

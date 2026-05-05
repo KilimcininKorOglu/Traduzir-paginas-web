@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Þýddu síðu þína í rauntíma með Google eða Yandex."
+    "message": "Þýddu síðu þína í rauntíma með Google."
   },
   "pageActionTitle": {
     "message": "Þýða þessa síðu"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Þegar ég snerti skjáinn með þremur fingrum"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Opna í Yandex Translate"
   },
   "lblOthers": {
     "message": "Annað"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Nota"
-  },
-  "swapTranslationService": {
-    "message": "Skipta á milli þýðingarþjónustu"
-  },
-  "swapPopup": {
-    "message": "Skipta á milli einfalds og flókins viðmóts"
   },
   "lblTranslateInterface": {
     "message": "Þýða viðmótið"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Friðhelgi"
   },
-  "selectToEnableTranslationService": {
-    "message": "Veldu þýðingarþjónustuna sem þú vilt nota"
-  },
-  "useAlternativeService": {
-    "message": "Nota aðra þýðingarþjónustu án vitundar ef núverandi marktungumál er ekki stutt af völdu þýðingarþjónustunni"
-  },
   "msgDefaultLanguage": {
     "message": "Sjálfgefið tungumál"
   },
   "msgExtUILanguage": {
     "message": "Tungumál notandaviðmóts forritsaukans"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Ertu viss um að þú viljir stilla þýðingarþjónustuna í DeepL.\nNýr flipi mun opnast og þýðingin mun fara fram þar."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Þessi flipi opnaðist vegna þess að þú smelltir til að þýða valinn texta með DeepL."
   },
   "msgDontShowAgain": {
     "message": "Ekki birta aftur"

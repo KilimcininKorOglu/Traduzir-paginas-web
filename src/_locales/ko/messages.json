@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Google 또는 Yandex를 사용하여 실시간으로 페이지를 번역하세요."
+    "message": "Google를 사용하여 실시간으로 페이지를 번역하세요."
   },
   "pageActionTitle": {
     "message": "이 페이지 번역"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "화면을 손가락 세 개로 터치했을 때"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Yandex Translate에서 열기"
   },
   "lblOthers": {
     "message": "기타"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "적용"
-  },
-  "swapTranslationService": {
-    "message": "번역 서비스 간 전환"
-  },
-  "swapPopup": {
-    "message": "간단한 인터페이스와 복잡한 인터페이스 간 전환"
   },
   "lblTranslateInterface": {
     "message": "인터페이스 번역"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "개인정보"
   },
-  "selectToEnableTranslationService": {
-    "message": "사용할 번역 서비스 선택"
-  },
-  "useAlternativeService": {
-    "message": "선택한 번역 서비스가 도착어를 지원하지 않는 경우 자동으로 대체 번역 서비스를 사용합니다."
-  },
   "msgDefaultLanguage": {
     "message": "기본 언어"
   },
   "msgExtUILanguage": {
     "message": "확장 기능 사용자 인터페이스 언어"
-  },
-  "msgSetDeepLAlert": {
-    "message": "번역 서비스를 DeepL로 설정하시겠습니까? 새 탭을 열고 그곳에서 번역을 수행하게 됩니다."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "선택한 텍스트를 DeepL로 번역한다고 선택하셔서 이 탭이 열렸습니다."
   },
   "msgDontShowAgain": {
     "message": "다시 보지 않기"

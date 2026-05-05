@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "แปลหน้าเว็บแบบเรียลไทม์โดยใช้ Google หรือ Yandex"
+    "message": "แปลหน้าเว็บแบบเรียลไทม์โดยใช้ Google"
   },
   "pageActionTitle": {
     "message": "แปลหน้านี้ไหม"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "เมื่อฉันแตะสามนิ้วบนหน้าจอ"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "เปิดในยานเดกซ์แปล"
   },
   "lblOthers": {
     "message": "คนอื่น"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "นำมาใช้"
-  },
-  "swapTranslationService": {
-    "message": "สลับระหว่างบริการแปลภาษา"
-  },
-  "swapPopup": {
-    "message": "สลับไปมาระหว่างอินเทอร์เฟซที่เรียบง่ายและซับซ้อน"
   },
   "lblTranslateInterface": {
     "message": "แปลอินเทอร์เฟซ"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "ความเป็นส่วนตัว"
   },
-  "selectToEnableTranslationService": {
-    "message": "เลือกบริการแปลที่คุณต้องการใช้"
-  },
-  "useAlternativeService": {
-    "message": "ใช้บริการแปลอื่นโดยไม่ต้องแจ้งให้ทราบหากภาษาเป้าหมายปัจจุบันไม่ได้รับการสนับสนุนโดยบริการแปลที่เลือก"
-  },
   "msgDefaultLanguage": {
     "message": "ภาษาเริ่มต้น"
   },
   "msgExtUILanguage": {
     "message": "ภาษาส่วนติดต่อผู้ใช้ส่วนขยาย"
-  },
-  "msgSetDeepLAlert": {
-    "message": "คุณแน่ใจหรือไม่ว่าต้องการตั้งค่าบริการแปลเป็น DeepL\nแท็บใหม่จะเปิดขึ้น และการแปลจะเกิดขึ้นที่นั่น"
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "แท็บนี้เปิดขึ้นเนื่องจากคุณคลิกเพื่อแปลข้อความที่เลือกโดยใช้ DeepL"
   },
   "msgDontShowAgain": {
     "message": "อย่าแสดงอีก"

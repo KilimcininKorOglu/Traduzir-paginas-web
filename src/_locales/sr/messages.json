@@ -74,9 +74,6 @@
   "optionPopupThreeFingers": {
     "message": "Када додирнем три прста на екрану"
   },
-  "msgOpenOnYandexTranslator": {
-    "message": "Отворите у Иандек преводу"
-  },
   "lblOthers": {
     "message": "Други"
   },
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Применити"
-  },
-  "swapTranslationService": {
-    "message": "Пребацивање између услуга превођења"
-  },
-  "swapPopup": {
-    "message": "Пребацивање између једноставног и сложеног интерфејса"
   },
   "lblTranslateInterface": {
     "message": "Преведите интерфејс"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Приватност"
   },
-  "selectToEnableTranslationService": {
-    "message": "Изаберите услуге превођења које желите да користите"
-  },
-  "useAlternativeService": {
-    "message": "Нечујно користите алтернативну услугу превођења ако одабрана услуга превођења не подржава тренутни циљни језик"
-  },
   "msgDefaultLanguage": {
     "message": "Подразумевани језик"
   },
   "msgExtUILanguage": {
     "message": "Језик корисничког интерфејса екстензије"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Да ли сте сигурни да желите да подесите услугу превођења на ДеепЛ?\nОтвориће се нова картица и ту ће се извршити превод."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Ова картица је отворена јер сте кликнули да преведете изабрани текст користећи ДеепЛ."
   },
   "msgDontShowAgain": {
     "message": "Не приказуј поново"

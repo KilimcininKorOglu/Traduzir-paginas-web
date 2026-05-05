@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "ترجم صفحتك في الوقت الفعلي باستخدام Google أو Yandex."
+    "message": "ترجم صفحتك في الوقت الفعلي باستخدام Google."
   },
   "pageActionTitle": {
     "message": "ترجم هذه الصفحة"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "عندما ألمس الشاشة بثلاث أصابع"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "فتح في ترجمة yandex"
   },
   "lblOthers": {
     "message": "أخرى"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "يتقدم"
-  },
-  "swapTranslationService": {
-    "message": "التبديل بين خدمات الترجمة"
-  },
-  "swapPopup": {
-    "message": "التبديل بين الواجهة البسيطة و المعقدة"
   },
   "lblTranslateInterface": {
     "message": "ترجمة الواجهة"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "خصوصية"
   },
-  "selectToEnableTranslationService": {
-    "message": "حدد خدمات الترجمة التي تريد استخدامها"
-  },
-  "useAlternativeService": {
-    "message": "استخدم بصمت خدمة ترجمة بديلة إذا كانت اللغة الهدف الحالية غير مدعومة من قبل خدمة الترجمة المحددة"
-  },
   "msgDefaultLanguage": {
     "message": "اللغة الاعْتيادية"
   },
   "msgExtUILanguage": {
     "message": "لغة واجهة المستخدم الملحقه"
-  },
-  "msgSetDeepLAlert": {
-    "message": "هل أنت متأكد أنك تريد تعيين خدمة الترجمة على DeepL؟\nسيتم فتح علامة تبويب جديدة، وستتم الترجمة هناك."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "تم فتح علامة التبويب هذه لأنك نقرت لترجمة النص المحدد باستخدام DeepL."
   },
   "msgDontShowAgain": {
     "message": "لا تظهر مرة أخرى"

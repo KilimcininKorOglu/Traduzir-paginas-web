@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Преведете страницата си в реално време с помощта на Google или Yandex."
+    "message": "Преведете страницата си в реално време с помощта на Google."
   },
   "pageActionTitle": {
     "message": "Преведи тази страница"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Когато докосна екрана с три пръста"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Отвори в Yandex Преводач"
   },
   "lblOthers": {
     "message": "Други"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Прилагане"
-  },
-  "swapTranslationService": {
-    "message": "Превключване между услуги за превод"
-  },
-  "swapPopup": {
-    "message": "Превключване между прост и сложен интерфейс"
   },
   "lblTranslateInterface": {
     "message": "Преведи интерфейса"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Поверителност"
   },
-  "selectToEnableTranslationService": {
-    "message": "Избери услугите за превод, които искате да използвате"
-  },
-  "useAlternativeService": {
-    "message": "Безшумно използване на алтернативна услуга за превод, ако текущият целеви език не се поддържа от избраната услуга за превод"
-  },
   "msgDefaultLanguage": {
     "message": "Език по подразбиране"
   },
   "msgExtUILanguage": {
     "message": "Език на потребителския интерфейс на разширението"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Сигурни ли сте, че искате да настроите услугата за превод на DeepL?\nЩе се отвори нов раздел и преводът ще се извърши там."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Този раздел се отвори, защото сте щракнали, за да преведете избран текст с помощта на DeepL."
   },
   "msgDontShowAgain": {
     "message": "Не показвай отново"

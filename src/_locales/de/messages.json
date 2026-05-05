@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Übersetzen Sie Ihre Seite in Echtzeit mit Google oder Yandex."
+    "message": "Übersetzen Sie Ihre Seite in Echtzeit mit Google."
   },
   "pageActionTitle": {
     "message": "Diese Seite übersetzen"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Wenn ich den Bildschirm mit drei Fingern berühre"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "In Yandex Übersetzung öffnen"
   },
   "lblOthers": {
     "message": "Andere"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Anwenden"
-  },
-  "swapTranslationService": {
-    "message": "Zwischen Übersetzungsdiensten wechseln"
-  },
-  "swapPopup": {
-    "message": "Zwischen einfacher und komplexer Schnittstelle wechseln"
   },
   "lblTranslateInterface": {
     "message": "Die Benutzeroberfläche übersetzen"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Privatsphäre"
   },
-  "selectToEnableTranslationService": {
-    "message": "Wählen Sie die Übersetzungsdienste aus, die Sie nutzen möchten"
-  },
-  "useAlternativeService": {
-    "message": "Nutzen Sie stillschweigend einen alternativen Übersetzungsdienst, wenn die aktuelle Zielsprache vom ausgewählten Übersetzungsdienst nicht unterstützt wird"
-  },
   "msgDefaultLanguage": {
     "message": "Standardsprache"
   },
   "msgExtUILanguage": {
     "message": "Sprache der Benutzeroberfläche der Erweiterung"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Sind Sie sicher, dass Sie den Übersetzungsdienst auf DeepL einstellen möchten?\nEs öffnet sich ein neuer Tab und die Übersetzung findet dort statt."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Dieser Tab wurde geöffnet, da Sie ausgewählt haben, den Text mit DeepL zu übersetzen."
   },
   "msgDontShowAgain": {
     "message": "Nicht erneut anzeigen"

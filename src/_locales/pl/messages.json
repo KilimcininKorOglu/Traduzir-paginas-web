@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Przetłumacz swoją stronę w czasie rzeczywistym za pomocą Google lub Yandex."
+    "message": "Przetłumacz swoją stronę w czasie rzeczywistym za pomocą Google."
   },
   "pageActionTitle": {
     "message": "Tłumacz tę stronę"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Kiedy dotykam ekranu trzema palcami"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Otwórz w translatorze Yandex"
   },
   "lblOthers": {
     "message": "Inne"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Zastosuj"
-  },
-  "swapTranslationService": {
-    "message": "Przełącz usługę tłumaczenia"
-  },
-  "swapPopup": {
-    "message": "Przełącz między uproszczonym a zaawansowanym interfejsem"
   },
   "lblTranslateInterface": {
     "message": "Pomóż w tłumaczeniu interfejsu"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Prywatność"
   },
-  "selectToEnableTranslationService": {
-    "message": "Wybierz usługi tłumaczeniowe, z których chcesz korzystać"
-  },
-  "useAlternativeService": {
-    "message": "Sam użyj alternatywnej usługi tłumaczeniowej, jeśli bieżący język docelowy nie jest obsługiwany przez wybraną usługę tłumaczeniową"
-  },
   "msgDefaultLanguage": {
     "message": "Domyślny język"
   },
   "msgExtUILanguage": {
     "message": "Język interfejsu rozszerzenia"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Czy na pewno chcesz ustawić usługę tłumaczenia na DeepL?\nOtworzy się nowa karta, w której odbędzie się tłumaczenie."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Ta karta została otwarta, ponieważ została wybrana opcja przetłumaczenia zaznaczonego tekstu za pomocą DeepL."
   },
   "msgDontShowAgain": {
     "message": "Nie pokazuj ponownie"

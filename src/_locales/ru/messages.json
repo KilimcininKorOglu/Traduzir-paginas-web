@@ -74,9 +74,6 @@
   "optionPopupThreeFingers": {
     "message": "Когда касаюсь экрана тремя пальцами"
   },
-  "msgOpenOnYandexTranslator": {
-    "message": "Открыть в Яндекс.Переводчике"
-  },
   "lblOthers": {
     "message": "Прочее"
   },
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Применить"
-  },
-  "swapTranslationService": {
-    "message": "Переключиться между сервисами перевода"
-  },
-  "swapPopup": {
-    "message": "Переключиться между упрощённым и расширенным интерфейсами"
   },
   "lblTranslateInterface": {
     "message": "Помочь с переводом"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Конфиденциальность"
   },
-  "selectToEnableTranslationService": {
-    "message": "Выберите сервис перевода, который вы хотите использовать"
-  },
-  "useAlternativeService": {
-    "message": "Автоматически использовать альтернативную службу перевода, если текущий целевой язык не поддерживается выбранным сервисом перевода"
-  },
   "msgDefaultLanguage": {
     "message": "Язык по умолчанию"
   },
   "msgExtUILanguage": {
     "message": "Язык интерфейса расширения"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Вы уверены, что хотите выбрать DeepL в качестве службы перевода?\nПеревод откроется в новой вкладке."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Эта вкладка открылась, потому что вы нажали кнопку перевода выделенного текста с помощью DeepL."
   },
   "msgDontShowAgain": {
     "message": "Больше не показывать"

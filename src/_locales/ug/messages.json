@@ -74,9 +74,6 @@
   "optionPopupThreeFingers": {
     "message": "ئېكرانغا ئۈچ بارماق تەگسەم"
   },
-  "msgOpenOnYandexTranslator": {
-    "message": "Yandex تەرجىمىسىدە ئېچىڭ"
-  },
   "lblOthers": {
     "message": "باشقىلار"
   },
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "ئىلتىماس قىلىڭ"
-  },
-  "swapTranslationService": {
-    "message": "تەرجىمە مۇلازىمىتى ئارىسىدا ئالماشتۇرۇڭ"
-  },
-  "swapPopup": {
-    "message": "ئاددىي ۋە مۇرەككەپ كۆرۈنمە يۈزىگە ئالماشتۇرۇڭ"
   },
   "lblTranslateInterface": {
     "message": "كۆرۈنمە يۈزىنى تەرجىمە قىلىڭ"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "مەخپىيەتلىك"
   },
-  "selectToEnableTranslationService": {
-    "message": "ئىشلەتمەكچى بولغان تەرجىمە مۇلازىمىتىنى تاللاڭ"
-  },
-  "useAlternativeService": {
-    "message": "ئەگەر نۆۋەتتىكى نىشان تىلنى تاللانغان تەرجىمە مۇلازىمىتى قوللىمىسا ، باشقا تەرجىمە مۇلازىمىتىنى جىمجىت ئىشلىتىڭ"
-  },
   "msgDefaultLanguage": {
     "message": "كۆڭۈلدىكى تىل"
   },
   "msgExtUILanguage": {
     "message": "كېڭەيتىلگەن ئىشلەتكۈچى كۆرۈنمە يۈزى تىلى"
-  },
-  "msgSetDeepLAlert": {
-    "message": "DeepL غا تەرجىمە مۇلازىمىتىنى تەڭشىمەكچىمۇ؟\nيېڭى بەتكۈچ ئېچىلىدۇ ، تەرجىمە شۇ يەردە ئېلىپ بېرىلىدۇ."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "DeepL ئارقىلىق تاللانغان تېكىستنى تەرجىمە قىلىشنى چەككەنلىكىڭىز ئۈچۈن بۇ بەتكۈچ ئېچىلدى."
   },
   "msgDontShowAgain": {
     "message": "قايتا كۆرسەتمەڭ"

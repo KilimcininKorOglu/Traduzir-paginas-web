@@ -74,9 +74,6 @@
   "optionPopupThreeFingers": {
     "message": "وقتی سه انگشت را روی صفحه لمس می کنم"
   },
-  "msgOpenOnYandexTranslator": {
-    "message": "باز کردن در مترجم یاندکس"
-  },
   "lblOthers": {
     "message": "سایر موارد"
   },
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "اعمال"
-  },
-  "swapTranslationService": {
-    "message": "جابه جایی بین سرویس ترجمه ها"
-  },
-  "swapPopup": {
-    "message": "بین رابط قدیمی و جدید سوئیچ کنید"
   },
   "lblTranslateInterface": {
     "message": "رابط را ترجمه کنید"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "حریم خصوصی"
   },
-  "selectToEnableTranslationService": {
-    "message": "انتخاب خدمات ترجمه ای که شما می خواهید استفاده کنید"
-  },
-  "useAlternativeService": {
-    "message": "اگر زبان مقصد فعلی توسط سرویس ترجمه انتخابی پشتیبانی نمی‌شود، بدون خبر دادن از یک سرویس ترجمه جایگزین استفاده کنید"
-  },
   "msgDefaultLanguage": {
     "message": "زبان پیش‌فرض / زبان معمول"
   },
   "msgExtUILanguage": {
     "message": "زبان رابط کاربری افزونه"
-  },
-  "msgSetDeepLAlert": {
-    "message": "آیا مطمئن هستید که می خواهید سرویس ترجمه را روی DeepL تنظیم کنید؟\nیک برگه جدید باز می شود و ترجمه در آنجا انجام می شود."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "این برگه باز شد زیرا برای ترجمه متن انتخابی با استفاده از DeepL کلیک کردید."
   },
   "msgDontShowAgain": {
     "message": "دیگر نشان نده"

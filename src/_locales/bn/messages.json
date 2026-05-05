@@ -74,9 +74,6 @@
   "optionPopupThreeFingers": {
     "message": "যখন আমি স্ক্রিনে তিনটি আঙ্গুল স্পর্শ করি"
   },
-  "msgOpenOnYandexTranslator": {
-    "message": "ইয়ানডেক্স অনুবাদ সফটওয়্যারে খুলুন"
-  },
   "lblOthers": {
     "message": "অন্যান্য"
   },
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "প্রয়োগ করুন"
-  },
-  "swapTranslationService": {
-    "message": "ভিন্ন ভিন্ন অনুবাদ সেবাগুলির মধ্যে স্যুইচ করুন"
-  },
-  "swapPopup": {
-    "message": "সহজ এবং জটিল ইন্টারফেসের মধ্যে স্যুইচ করুন"
   },
   "lblTranslateInterface": {
     "message": "ইন্টারফেস অনুবাদ করুন"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "গোপনীয়তা"
   },
-  "selectToEnableTranslationService": {
-    "message": "আপনি যে অনুবাদ পরিষেবাগুলি ব্যবহার করতে চান তা নির্বাচন করুন৷"
-  },
-  "useAlternativeService": {
-    "message": "বর্তমান টার্গেট ভাষা নির্বাচিত অনুবাদ পরিষেবা দ্বারা সমর্থিত না হলে নীরবে একটি বিকল্প অনুবাদ পরিষেবা ব্যবহার করুন৷"
-  },
   "msgDefaultLanguage": {
     "message": "নির্ধারিত ভাষা"
   },
   "msgExtUILanguage": {
     "message": "এক্সটেনশন ইউজার ইন্টারফেস ভাষা"
-  },
-  "msgSetDeepLAlert": {
-    "message": "আপনি কি অনুবাদ পরিষেবাটিকে DeepL-এ সেট করার বিষয়ে নিশ্চিত?\nএকটি নতুন ট্যাব খুলবে, এবং অনুবাদ সেখানে সঞ্চালিত হবে।"
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "এই ট্যাবটি খোলা হয়েছে কারণ আপনি DeepL ব্যবহার করে নির্বাচিত পাঠ্য অনুবাদ করতে ক্লিক করেছেন।"
   },
   "msgDontShowAgain": {
     "message": "আবার দেখাবেন না"

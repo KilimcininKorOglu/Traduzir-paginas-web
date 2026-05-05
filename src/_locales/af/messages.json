@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Vertaal jou bladsy intyds met Google of Yandex."
+    "message": "Vertaal jou bladsy intyds met Google."
   },
   "pageActionTitle": {
     "message": "Vertaal hierdie bladsy"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Wanneer ek drie vingers op die skerm raak"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Maak oop in yandex translate"
   },
   "lblOthers": {
     "message": "Ander"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Doen aansoek"
-  },
-  "swapTranslationService": {
-    "message": "Wissel tussen vertaaldienste"
-  },
-  "swapPopup": {
-    "message": "Skakel tussen eenvoudige en komplekse koppelvlak"
   },
   "lblTranslateInterface": {
     "message": "Vertaal die koppelvlak"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Privaatheid"
   },
-  "selectToEnableTranslationService": {
-    "message": "Kies die vertaaldienste wat jy wil gebruik"
-  },
-  "useAlternativeService": {
-    "message": "Gebruik stilweg 'n alternatiewe vertaaldiens as die huidige teikentaal nie deur die geselekteerde vertaaldiens ondersteun word nie"
-  },
   "msgDefaultLanguage": {
     "message": "Verstektaal"
   },
   "msgExtUILanguage": {
     "message": "Uitbreiding gebruikerskoppelvlak taal"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Is jy seker jy wil die vertaaldiens op DeepL stel?\n'n Nuwe oortjie sal oopmaak, en die vertaling sal daar plaasvind."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Hierdie oortjie het oopgemaak omdat jy geklik het om geselekteerde teks met DeepL te vertaal."
   },
   "msgDontShowAgain": {
     "message": "Moenie weer wys nie"

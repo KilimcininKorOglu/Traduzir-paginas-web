@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Перекладіть вашу сторінку в реальному часі за допомогою Google або Yandex."
+    "message": "Перекладіть вашу сторінку в реальному часі за допомогою Google."
   },
   "pageActionTitle": {
     "message": "Перекласти цю сторінку"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Коли я торкаюся трьома пальцями на екрані"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Відкрити в перекладі Yandex"
   },
   "lblOthers": {
     "message": "Інші"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Застосувати"
-  },
-  "swapTranslationService": {
-    "message": "Перемкнутись між службами перекладу"
-  },
-  "swapPopup": {
-    "message": "Перемикання між простим і комплексним інтерфейсом"
   },
   "lblTranslateInterface": {
     "message": "Перекласти інтерфейс"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Конфіденційність"
   },
-  "selectToEnableTranslationService": {
-    "message": "Виберіть сервіси перекладу, які ви хочете використовувати"
-  },
-  "useAlternativeService": {
-    "message": "Використовувати альтернативну службу перекладу, якщо поточна мова перекладу не підтримується обраною службою перекладу"
-  },
   "msgDefaultLanguage": {
     "message": "Мова за замовчуванням"
   },
   "msgExtUILanguage": {
     "message": "Мова інтерфейсу розширень"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Ви впевнені, що хочете встановити службу перекладу на DeepL?\nВідкриється нова вкладка, у якій відбудеться переклад."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Ця вкладка відкрилася, тому що ви натиснули, щоб перекласти виділений текст за допомогою DeepL."
   },
   "msgDontShowAgain": {
     "message": "Більше не показувати"

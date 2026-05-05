@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Google veya Yandex kullanarak sayfanızı gerçek zamanlı olarak çevirin."
+    "message": "Google kullanarak sayfanızı gerçek zamanlı olarak çevirin."
   },
   "pageActionTitle": {
     "message": "Bu sayfayı çevir"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Ekrana üç parmakla dokunulduğunda"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Yandex Çeviri'de aç"
   },
   "lblOthers": {
     "message": "Diğerleri"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Uygula"
-  },
-  "swapTranslationService": {
-    "message": "Çeviri hizmetleri arasında geçiş yap"
-  },
-  "swapPopup": {
-    "message": "Basit ve gelişmiş arayüz arasında geçiş yap"
   },
   "lblTranslateInterface": {
     "message": "Arayüzü çevir"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Gizlilik"
   },
-  "selectToEnableTranslationService": {
-    "message": "Kullanmak istediğiniz çeviri hizmetlerini seçin"
-  },
-  "useAlternativeService": {
-    "message": "Geçerli hedef dil seçilen hizmet tarafından desteklenmiyorsa, arka planda alternatif bir çeviri hizmeti kullan"
-  },
   "msgDefaultLanguage": {
     "message": "Varsayılan dil"
   },
   "msgExtUILanguage": {
     "message": "Eklenti arayüz dili"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Çeviri hizmetini DeepL olarak ayarlamak istediğinizden emin misiniz?\n Yeni bir sekme açılacak ve çeviri orada gerçekleşecek."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Bu sekme, seçilen metni DeepL kullanarak çevirmek için tıkladığınızda açıldı."
   },
   "msgDontShowAgain": {
     "message": "Bir daha gösterme"

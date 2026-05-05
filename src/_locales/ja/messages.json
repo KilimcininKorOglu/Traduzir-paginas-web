@@ -74,9 +74,6 @@
   "optionPopupThreeFingers": {
     "message": "画面を3本指でタップしたとき"
   },
-  "msgOpenOnYandexTranslator": {
-    "message": "Yandex翻訳で開く"
-  },
   "lblOthers": {
     "message": "その他"
   },
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "適用"
-  },
-  "swapTranslationService": {
-    "message": "翻訳サービスを切り替える"
-  },
-  "swapPopup": {
-    "message": "シンプルなポップアップ画面と高機能なポップアップ画面を切り替える"
   },
   "lblTranslateInterface": {
     "message": "インターフェースを翻訳"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "プライバシー"
   },
-  "selectToEnableTranslationService": {
-    "message": "使用する翻訳サービスを選択"
-  },
-  "useAlternativeService": {
-    "message": "選択された翻訳サービスが翻訳対象の言語に対応していない場合、別の翻訳サービスを使用"
-  },
   "msgDefaultLanguage": {
     "message": "既定の言語"
   },
   "msgExtUILanguage": {
     "message": "拡張機能のインターフェースの言語"
-  },
-  "msgSetDeepLAlert": {
-    "message": "本当に翻訳サービスをDeepLに設定しますか？\n翻訳は新しいタブで行われるようになります。"
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "DeepLで選択したテキストを翻訳したため、このタブが開かれました。"
   },
   "msgDontShowAgain": {
     "message": "再度表示しない"

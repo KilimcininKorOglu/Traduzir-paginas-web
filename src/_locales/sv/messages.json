@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Översätt webbplatser i realtid med hjälp av Google eller Yandex."
+    "message": "Översätt webbplatser i realtid med hjälp av Google."
   },
   "pageActionTitle": {
     "message": "Översätt denna sida"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "När jag trycker på skärmen med tre fingrar"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Öppna i Yandex Translate"
   },
   "lblOthers": {
     "message": "Övriga"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Tillämpa"
-  },
-  "swapTranslationService": {
-    "message": "Växla mellan översättningstjänster"
-  },
-  "swapPopup": {
-    "message": "Växla mellan enkelt och komplext gränssnitt"
   },
   "lblTranslateInterface": {
     "message": "Översätt gränssnittet"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Sekretess"
   },
-  "selectToEnableTranslationService": {
-    "message": "Välj vilka översättningstjänster du vill använda"
-  },
-  "useAlternativeService": {
-    "message": "Använd tyst en alternativ översättningstjänst om det aktuella målspråket inte stöds av den valda översättningstjänsten"
-  },
   "msgDefaultLanguage": {
     "message": "Standardspråk"
   },
   "msgExtUILanguage": {
     "message": "Språk för tilläggets användargränssnitt"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Är du säker på att du vill ställa in översättningstjänsten till DeepL?\nEn ny flik öppnas och översättningen kommer att ske där."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Den här fliken öppnades eftersom du klickade för att översätta vald text med DeepL."
   },
   "msgDontShowAgain": {
     "message": "Visa inte igen"

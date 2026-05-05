@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Přeložte svou stránku v reálném čase pomocí Google nebo Yandex."
+    "message": "Přeložte svou stránku v reálném čase pomocí Google neb."
   },
   "pageActionTitle": {
     "message": "Přeložit tuto stránku"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Když se dotknu tří prstů na obrazovce"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Otevřeno v yandexovém překladu"
   },
   "lblOthers": {
     "message": "Ostatní"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Aplikovat"
-  },
-  "swapTranslationService": {
-    "message": "Přepínání mezi překladatelskými službami"
-  },
-  "swapPopup": {
-    "message": "Přepínání mezi jednoduchým a komplexním rozhraním"
   },
   "lblTranslateInterface": {
     "message": "Přeložte rozhraní"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Soukromí"
   },
-  "selectToEnableTranslationService": {
-    "message": "Vyberte překladatelské služby, které chcete použít"
-  },
-  "useAlternativeService": {
-    "message": "Tiše použijte alternativní překladatelskou službu, pokud vybraná překladatelská služba nepodporuje aktuální cílový jazyk"
-  },
   "msgDefaultLanguage": {
     "message": "Základní jazyk"
   },
   "msgExtUILanguage": {
     "message": "Jazyk uživatelského rozhraní rozšíření"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Opravdu chcete nastavit překladatelskou službu na DeepL?\nOtevře se nová karta a tam se provede překlad."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Tato záložka byla otevřena, protože jste klikli na překlad vybraného textu pomocí DeepL."
   },
   "msgDontShowAgain": {
     "message": "Příště již nezobrazovat"

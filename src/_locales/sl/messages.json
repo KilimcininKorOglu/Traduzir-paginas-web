@@ -74,9 +74,6 @@
   "optionPopupThreeFingers": {
     "message": "Ko se s tremi prsti dotaknem zaslona"
   },
-  "msgOpenOnYandexTranslator": {
-    "message": "Odpri v Yandex prevajalniku"
-  },
   "lblOthers": {
     "message": "Ostali"
   },
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Prijavite se"
-  },
-  "swapTranslationService": {
-    "message": "Preklapljanje med prevajalskimi storitvami"
-  },
-  "swapPopup": {
-    "message": "Preklapljajte med preprostim in zapletenim vmesnikom"
   },
   "lblTranslateInterface": {
     "message": "Prevedite uporabniški vmesnik"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Zasebnost"
   },
-  "selectToEnableTranslationService": {
-    "message": "Izberite prevajalske storitve, ki jih želite uporabiti"
-  },
-  "useAlternativeService": {
-    "message": "Tiho uporabite nadomestno prevajalsko storitev, če izbrana prevajalska storitev ne podpira trenutnega ciljnega jezika"
-  },
   "msgDefaultLanguage": {
     "message": "Privzeti jezik"
   },
   "msgExtUILanguage": {
     "message": "Jezik uporabniškega vmesnika razširitve"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Ali ste prepričani, da želite prevajalsko storitev nastaviti na DeepL?\nOdprl se bo nov zavihek in tam bo izveden prevod."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Ta zavihek se je odprl, ker ste kliknili za prevod izbranega besedila z uporabo DeepL."
   },
   "msgDontShowAgain": {
     "message": "Ne pokaži več"

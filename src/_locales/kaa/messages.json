@@ -74,9 +74,6 @@
   "optionPopupThreeFingers": {
     "message": "Men ekranǵa ush barmaqtı basqanimda"
   },
-  "msgOpenOnYandexTranslator": {
-    "message": "Yandex awdarmashıda ashıw"
-  },
   "lblOthers": {
     "message": "Basqa"
   },
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Qollanıw"
-  },
-  "swapTranslationService": {
-    "message": "Awdarma xızmetlerin almastırıw"
-  },
-  "swapPopup": {
-    "message": "Ápiwayılastırılǵan hám rawajlanǵan ayna ortasında almaslaw"
   },
   "lblTranslateInterface": {
     "message": "Awdarmaǵa menen járdem beriń"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Qupıyalıq"
   },
-  "selectToEnableTranslationService": {
-    "message": "Paydalanıwdı qáleytuǵın awdaema xızmetlerin tańlań"
-  },
-  "useAlternativeService": {
-    "message": "Eger ámeldegi awdarma til saylanǵan awdarma xızmeti tárepinen qollap - quwatlanbasa, avtomatikalıq awdarma xızmetinen paydalanıń"
-  },
   "msgDefaultLanguage": {
     "message": "Standart til"
   },
   "msgExtUILanguage": {
     "message": "Keńeytpe paydalanıwshı interfeys tili"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Haqıyqattan da awdarma xızmetin DeepL ǵa ornatpaqshısızba?\n Jańa jarlıq ashıladı hám awdarma sol orında ámelge asıriladı."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "This tab opened because you clicked to translate selected text using DeepL."
   },
   "msgDontShowAgain": {
     "message": "Don't show again"

@@ -74,9 +74,6 @@
   "optionPopupThreeFingers": {
     "message": "Όταν αγγίζω τρία δάχτυλα στην οθόνη"
   },
-  "msgOpenOnYandexTranslator": {
-    "message": "Άνοιγμα μεταφραστή Yandex"
-  },
   "lblOthers": {
     "message": "Άλλα"
   },
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Εφαρμογή"
-  },
-  "swapTranslationService": {
-    "message": "Εναλλαγή μεταξύ υπηρεσιών μετάφρασης"
-  },
-  "swapPopup": {
-    "message": "Εναλλαγή μεταξύ απλού και σύνθετου περιβάλλοντος"
   },
   "lblTranslateInterface": {
     "message": "Μετάφραση περιβάλλοντος"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Απόρρητο"
   },
-  "selectToEnableTranslationService": {
-    "message": "Επιλέξτε τις υπηρεσίες μετάφρασης που θέλετε να χρησιμοποιήσετε"
-  },
-  "useAlternativeService": {
-    "message": "Αθόρυβη χρήση μιας εναλλακτικής μεταφραστικής υπηρεσίας εάν η τρέχουσα γλώσσα προορισμού δεν υποστηρίζεται από την επιλεγμένη μεταφραστική υπηρεσία"
-  },
   "msgDefaultLanguage": {
     "message": "Προεπιλεγμένη γλώσσα"
   },
   "msgExtUILanguage": {
     "message": "Επέκταση γλώσσας διεπαφής χρήστη"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Είστε βέβαιοι ότι θέλετε να ρυθμίσετε την υπηρεσία μετάφρασης σε DeepL;\nΘα ανοίξει μια νέα καρτέλα και η μετάφραση θα πραγματοποιηθεί εκεί."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Αυτή η καρτέλα άνοιξε επειδή κάνατε κλικ για να μεταφράσετε το επιλεγμένο κείμενο χρησιμοποιώντας το DeepL."
   },
   "msgDontShowAgain": {
     "message": "Μην εμφανιστείτε ξανά"

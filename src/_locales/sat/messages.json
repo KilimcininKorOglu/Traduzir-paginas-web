@@ -74,9 +74,6 @@
   "optionPopupThreeFingers": {
     "message": "ᱚᱠᱟ ᱡᱷᱚᱜ ᱤᱧ ᱯᱮᱭᱟ ᱠᱟᱹᱴᱩᱵ ᱛᱮ ᱯᱚᱨᱫᱟ ᱨᱮ ᱴᱤᱯᱟᱹᱣ ᱮᱫᱟᱹᱧ"
   },
-  "msgOpenOnYandexTranslator": {
-    "message": "yandex ᱛᱚᱨᱡᱚᱢᱟ ᱨᱮ ᱠᱷᱩᱞᱟᱹᱭ ᱢᱮ"
-  },
   "lblOthers": {
     "message": "ᱮᱴᱟᱜᱠᱚ"
   },
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "ᱮᱢ ᱪᱷᱚ"
-  },
-  "swapTranslationService": {
-    "message": "ᱛᱚᱨᱡᱚᱢᱟ ᱮᱢᱚᱜᱤᱡ ᱠᱚ ᱛᱟᱞᱟ ᱵᱷᱤᱛᱤᱨ ᱨᱮ ᱵᱚᱫᱚᱞ ᱢᱮ"
-  },
-  "swapPopup": {
-    "message": "ᱥᱚᱦᱚᱡᱽ ᱟᱨ ᱡᱚᱴᱤᱞ ᱤᱱᱴᱚᱨᱯᱷᱮᱥ ᱵᱷᱤᱛᱤᱨ ᱨᱮ ᱵᱚᱫᱚᱞ ᱢᱮ"
   },
   "lblTranslateInterface": {
     "message": "ᱤᱱᱴᱚᱨᱯᱷᱮᱥ ᱛᱚᱨᱡᱚᱢᱟᱭ ᱢᱮ"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "ᱯᱨᱟᱭᱣᱮᱥᱤ"
   },
-  "selectToEnableTranslationService": {
-    "message": "ᱟᱢ ᱡᱟᱦᱟᱸ ᱛᱚᱨᱡᱚᱢᱟ ᱥᱮᱵᱟ ᱵᱮᱵᱷᱟᱨ ᱥᱟᱱᱟᱭᱮᱫ ᱢᱮᱭᱟ ᱚᱱᱟ ᱵᱟᱪᱷᱟᱣ ᱢᱮ"
-  },
-  "useAlternativeService": {
-    "message": "ᱵᱟᱪᱷᱟᱣ ᱟᱠᱟᱱ ᱛᱚᱨᱡᱚ ᱥᱮᱵᱟ ᱦᱚᱛᱮᱛᱮ ᱱᱤᱛᱚᱜ ᱡᱚᱥ ᱯᱟᱹᱨᱥᱤ ᱵᱟᱭ ᱥᱟᱯᱚᱨᱴ ᱞᱮᱱᱠᱷᱟᱱ ᱛᱷᱤᱨ ᱠᱟᱛᱮ ᱵᱤᱠᱚᱞᱯᱚ ᱛᱚᱨᱡᱚ ᱥᱮᱵᱟ ᱵᱮᱵᱷᱟᱨ ᱢᱮ"
-  },
   "msgDefaultLanguage": {
     "message": "ᱢᱩ ᱯᱟᱹᱨᱥᱤ"
   },
   "msgExtUILanguage": {
     "message": "ᱮᱠᱥᱴᱮᱱᱥᱚᱱ ᱵᱮᱵᱷᱟᱨᱤᱭᱟᱹ ᱤᱱᱴᱟᱨᱯᱷᱮᱥ ᱯᱟᱹᱨᱥᱤ"
-  },
-  "msgSetDeepLAlert": {
-    "message": "ᱪᱮᱫ ᱟᱢ ᱴᱷᱟᱹᱣᱠᱟᱹ ᱜᱮᱭᱟᱢ ᱟᱢ ᱛᱚᱨᱡᱚᱢᱟ ᱥᱮᱵᱟ DeepL ᱨᱮ ᱥᱮᱴ ᱥᱟᱱᱟᱭᱮᱫ ᱢᱮᱭᱟ?\nᱢᱤᱫ ᱱᱟᱶᱟ ᱴᱮᱵᱽ ᱡᱷᱤᱡᱽᱚᱜᱼᱟ, ᱟᱨ ᱛᱚᱨᱡᱚᱢᱟ ᱚᱱᱰᱮ ᱦᱩᱭᱩᱜᱼᱟ ᱾"
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "ᱱᱚᱣᱟ ᱴᱮᱵᱽ ᱫᱚ ᱡᱷᱤᱡ ᱮᱱᱟ ᱪᱮᱫᱟᱜ ᱥᱮ ᱟᱢ DeepLᱵᱮᱵᱷᱟᱨ ᱠᱟᱛᱮ ᱵᱟᱪᱷᱟᱣ ᱚᱱᱚᱞ ᱛᱚᱨᱡᱚᱢ ᱞᱟᱹᱜᱤᱫ ᱞᱤᱱ ᱠᱮᱫᱟᱢ ᱾"
   },
   "msgDontShowAgain": {
     "message": "ᱫᱚᱦᱲᱟ ᱟᱞᱚᱢ ᱩᱫᱩᱜᱼᱟ"

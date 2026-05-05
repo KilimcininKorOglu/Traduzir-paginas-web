@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Dịch trang của bạn trong thời gian thực sử dụng Google hoặc Yandex. "
+    "message": "Dịch trang của bạn trong thời gian thực sử dụng Google. "
   },
   "pageActionTitle": {
     "message": "Dịch trang này "
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Khi tôi chạm 3 ngón tay trên màn hình"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Mở trong Yandex Translate"
   },
   "lblOthers": {
     "message": "Khác"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Áp dụng"
-  },
-  "swapTranslationService": {
-    "message": "Chuyển đổi giữa các dịch vụ dịch thuật"
-  },
-  "swapPopup": {
-    "message": "Chuyển giữa giao diện đơn giản và phức tạp"
   },
   "lblTranslateInterface": {
     "message": "Dịch giao diện"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Riêng tư"
   },
-  "selectToEnableTranslationService": {
-    "message": "Chọn dịch vụ dịch thuật bạn muốn sử dụng"
-  },
-  "useAlternativeService": {
-    "message": "Âm thầm sử dụng dịch vụ dịch thuật thay thế nếu ngôn ngữ cần dịch sang không được hỗ trợ bởi dịch vụ dịch thuật đã chọn"
-  },
   "msgDefaultLanguage": {
     "message": "Ngôn ngữ mặc định"
   },
   "msgExtUILanguage": {
     "message": "Ngôn ngữ giao diện người dùng của tiện ích"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Bạn có chắc chắn là muốn chuyển dịch vụ dịch thuật sang DeepL?\nMột thẻ mới sẽ mở, và bản dịch sẽ dịch ở đó."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Tab này mở ra vì bạn đã nhấp để dịch văn bản đã chọn sử dụng DeepL."
   },
   "msgDontShowAgain": {
     "message": "Không hiện lại"

@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Translate your page in real time using Google or Yandex."
+    "message": "Translate your page in real time using Google."
   },
   "pageActionTitle": {
     "message": "Translate this page"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "When I touch three fingers on the screen"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Open in Yandex Translate"
   },
   "lblOthers": {
     "message": "Others"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Apply"
-  },
-  "swapTranslationService": {
-    "message": "Switch between translation services"
-  },
-  "swapPopup": {
-    "message": "Switch between simple and complex interface"
   },
   "lblTranslateInterface": {
     "message": "Translate the interface"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Privacy"
   },
-  "selectToEnableTranslationService": {
-    "message": "Select the translation services you want to use"
-  },
-  "useAlternativeService": {
-    "message": "Silently use an alternate translation service if the current target language is not supported by the selected translation service"
-  },
   "msgDefaultLanguage": {
     "message": "Default language"
   },
   "msgExtUILanguage": {
     "message": "Extension user interface language"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Are you sure you want to set the translation service to DeepL?\nA new tab will open, and the translation will take place there."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "This tab opened because you clicked to translate selected text using DeepL."
   },
   "msgDontShowAgain": {
     "message": "Don't show again"

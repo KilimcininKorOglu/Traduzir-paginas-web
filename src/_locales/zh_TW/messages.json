@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "使用 Google 或 Yandex 即時翻譯您的網頁。"
+    "message": "使用 Google 即時翻譯您的網頁。"
   },
   "pageActionTitle": {
     "message": "翻譯此頁面"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "以三指點螢幕時"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "用 Yandex 翻譯開啟"
   },
   "lblOthers": {
     "message": "其它"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "套用"
-  },
-  "swapTranslationService": {
-    "message": "切換翻譯服務"
-  },
-  "swapPopup": {
-    "message": "切換簡潔和紛繁界面"
   },
   "lblTranslateInterface": {
     "message": "協助翻譯此擴充套件"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "隱私政策"
   },
-  "selectToEnableTranslationService": {
-    "message": "選擇要使用的翻譯服務"
-  },
-  "useAlternativeService": {
-    "message": "如果這家翻譯服務不支援目前的目標語言，可以換一家翻譯服務試試"
-  },
   "msgDefaultLanguage": {
     "message": "預設語言"
   },
   "msgExtUILanguage": {
     "message": "擴充套件使用者介面語言"
-  },
-  "msgSetDeepLAlert": {
-    "message": "您確定要將 DeepL 設爲翻譯服務嗎？\n這樣會打開一張新分頁，並在新分頁裏翻譯。"
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "此標籤開啟是因為您點擊使用 DeepL 翻譯所選文字。"
   },
   "msgDontShowAgain": {
     "message": "不再提示"

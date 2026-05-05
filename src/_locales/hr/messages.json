@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Prevodi stranice u stvarnom vremenu koristeći Google ili Yandex."
+    "message": "Prevodi stranice u stvarnom vremenu koristeći Google."
   },
   "pageActionTitle": {
     "message": "Prevedi ovu stranicu"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Kad dodirnem ekran s tri prsta"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Otvori u Yandex prevoditelju"
   },
   "lblOthers": {
     "message": "Ostalo"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Primijeni"
-  },
-  "swapTranslationService": {
-    "message": "Mijenjaj između usluga prevođenja"
-  },
-  "swapPopup": {
-    "message": "Mijenjaj između jednostavnog i kompleksnog sučelja"
   },
   "lblTranslateInterface": {
     "message": "Prevedi sučelje"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Privatnost"
   },
-  "selectToEnableTranslationService": {
-    "message": "Odaberi usluge prevođenja koje želiš koristiti"
-  },
-  "useAlternativeService": {
-    "message": "Koristi alternativnu uslugu prevođenja ako odabrana usluga prevođenja ne podržava trenutačni ciljani jezik"
-  },
   "msgDefaultLanguage": {
     "message": "Zadani jezik"
   },
   "msgExtUILanguage": {
     "message": "Jezik korisničkog sučelja dodatka"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Stvarno želiš postaviti DeepL kao uslugu prevođenja?\nOtvorit će se nova kartica u kojoj će se izvršiti prijevod."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Ova se kartica otvorila jer ste odabrali prevoditi označeni tekst pomoću DeepL-a."
   },
   "msgDontShowAgain": {
     "message": "Ne prikazuj ponovno"

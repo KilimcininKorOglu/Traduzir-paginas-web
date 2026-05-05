@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Traduisez votre page en temps réel grâce à Google ou Yandex."
+    "message": "Traduisez votre page en temps réel grâce à Google."
   },
   "pageActionTitle": {
     "message": "Traduire cette page"
@@ -73,9 +73,6 @@
   },
   "optionPopupThreeFingers": {
     "message": "Quand je touche l'écran avec trois doigts"
-  },
-  "msgOpenOnYandexTranslator": {
-    "message": "Ouvrir avec Yandex traduction"
   },
   "lblOthers": {
     "message": "Autres"
@@ -232,12 +229,6 @@
   },
   "btnApply": {
     "message": "Appliquer"
-  },
-  "swapTranslationService": {
-    "message": "Basculer entre les services de traduction"
-  },
-  "swapPopup": {
-    "message": "Basculer entre une interface simple et complexe"
   },
   "lblTranslateInterface": {
     "message": "Traduire l'interface"
@@ -513,23 +504,11 @@
   "msgPrivacy": {
     "message": "Confidentialité"
   },
-  "selectToEnableTranslationService": {
-    "message": "Sélectionnez les services de traduction que vous souhaitez utiliser"
-  },
-  "useAlternativeService": {
-    "message": "Utiliser silencieusement un autre service de traduction si la langue cible actuelle n'est pas prise en charge par le service de traduction sélectionné"
-  },
   "msgDefaultLanguage": {
     "message": "Langage par défaut"
   },
   "msgExtUILanguage": {
     "message": "Langue de l'interface utilisateur de l'extension"
-  },
-  "msgSetDeepLAlert": {
-    "message": "Êtes-vous sûr de vouloir définir le service de traduction sur DeepL ?\nUn nouvel onglet s'ouvrira et la traduction s'y déroulera."
-  },
-  "msgDeepLTabReasoOpened": {
-    "message": "Cet onglet s'est ouvert parce que vous avez cliqué pour traduire le texte sélectionné à l'aide de DeepL."
   },
   "msgDontShowAgain": {
     "message": "Ne plus montrer"
