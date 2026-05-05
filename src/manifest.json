@@ -158,7 +158,6 @@
       "/lib/i18n.js",
       "/background/translationCache.js",
       "/background/translationService.js",
-      "/background/textToSpeech.js",
       "/background/background.js"
     ]
   }
