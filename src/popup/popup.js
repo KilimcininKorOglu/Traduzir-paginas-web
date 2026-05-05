@@ -691,6 +691,11 @@ twpConfig
                 }
               );
               break;
+            case "siteSpecificSettings":
+              tabsCreate(
+                chrome.runtime.getURL("/options/options.html#sites")
+              );
+              break;
             case "moreOptions":
               tabsCreate(chrome.runtime.getURL("/options/options.html"));
               break;
@@ -731,6 +736,16 @@ twpConfig
         } else {
           $("option[data-i18n=btnAlwaysTranslate]").textContent =
             "✔ " + textAlways;
+        }
+
+        const siteConfig = twpConfig.getSiteSpecificConfig(hostname);
+        const textSiteSpecific = twpI18n.getMessage("lblSiteSpecificSettings") || "Site-specific settings";
+        if (siteConfig) {
+          $("option[data-i18n=lblSiteSpecificSettings]").textContent =
+            "✔ " + textSiteSpecific;
+        } else {
+          $("option[data-i18n=lblSiteSpecificSettings]").textContent =
+            textSiteSpecific;
         }
 
         $("option[data-i18n=btnDonate]").innerHTML += " &#10084;";
