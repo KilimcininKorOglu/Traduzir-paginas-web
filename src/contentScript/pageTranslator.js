@@ -401,6 +401,13 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
     if (siteSpecificConfig.pageTranslatorService) {
       currentPageTranslatorService = siteSpecificConfig.pageTranslatorService;
     }
+    if (siteSpecificConfig.customDictionary) {
+      const siteDict = new Map(Object.entries(siteSpecificConfig.customDictionary));
+      for (const [key, value] of siteDict) {
+        customDictionary.set(key, value);
+      }
+      customDictionary = sortDictionary(customDictionary);
+    }
   }
   let dontSortResults =
     twpConfig.get("dontSortResults") == "yes" ? true : false;
@@ -1139,6 +1146,13 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
     }
 
     customDictionary = sortDictionary(twpConfig.get("customDictionary"));
+    if (siteSpecificConfig && siteSpecificConfig.customDictionary) {
+      const siteDict = new Map(Object.entries(siteSpecificConfig.customDictionary));
+      for (const [key, value] of siteDict) {
+        customDictionary.set(key, value);
+      }
+      customDictionary = sortDictionary(customDictionary);
+    }
 
     // https://github.com/FilipePS/Traduzir-paginas-web/issues/619
     if (
