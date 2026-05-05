@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "ᱟᱢ ᱫᱚ ᱪᱮᱫ ᱢᱩᱞ ᱥᱟᱡᱟᱣ ᱠᱚ ᱞᱮᱠᱷᱟ ᱛᱮ ᱮᱠᱥᱴᱮᱱᱥᱚᱱ ᱫᱚᱦᱚ ᱥᱟᱱᱟᱢ ᱠᱟᱱᱟ ᱢᱮ ?"
   },
-  "lblTtsSpeed": {
-    "message": "ᱚᱞ ᱠᱷᱚᱱ ᱨᱚᱲ ᱥᱟᱰᱮ ᱜᱚᱛᱤ"
-  },
-  "lblTtsVolume": {
-    "message": "Text-to-speech audio volume"
-  },
   "enterShortcut": {
     "message": "ᱢᱤᱫᱴᱟᱹᱝ ᱠᱷᱟᱴᱚᱢᱟᱪᱷᱟ ᱚᱞ ᱢᱮ"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "ᱪᱮᱫ ᱟᱢ ᱴᱷᱟᱹᱣᱠᱟᱹ ᱜᱮᱭᱟᱢ ᱟᱢ ᱛᱚᱨᱡᱚᱢᱟ ᱥᱮᱵᱟ DeepL ᱨᱮ ᱥᱮᱴ ᱥᱟᱱᱟᱭᱮᱫ ᱢᱮᱭᱟ?\nᱢᱤᱫ ᱱᱟᱶᱟ ᱴᱮᱵᱽ ᱡᱷᱤᱡᱽᱚᱜᱼᱟ, ᱟᱨ ᱛᱚᱨᱡᱚᱢᱟ ᱚᱱᱰᱮ ᱦᱩᱭᱩᱜᱼᱟ ᱾"
-  },
-  "lblTextToSpeechService": {
-    "message": "ᱚᱞ ᱠᱷᱚᱱ ᱨᱚᱲ ᱥᱮᱵᱟ"
   },
   "msgDeepLTabReasoOpened": {
     "message": "ᱱᱚᱣᱟ ᱴᱮᱵᱽ ᱫᱚ ᱡᱷᱤᱡ ᱮᱱᱟ ᱪᱮᱫᱟᱜ ᱥᱮ ᱟᱢ DeepLᱵᱮᱵᱷᱟᱨ ᱠᱟᱛᱮ ᱵᱟᱪᱷᱟᱣ ᱚᱱᱚᱞ ᱛᱚᱨᱡᱚᱢ ᱞᱟᱹᱜᱤᱫ ᱞᱤᱱ ᱠᱮᱫᱟᱢ ᱾"

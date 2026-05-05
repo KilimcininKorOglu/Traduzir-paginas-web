@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "كېڭەيتىلمىنى سۈكۈتتىكى تەڭشىكىگە ئەسلىگە كەلتۈرمەكچىمۇ؟"
   },
-  "lblTtsSpeed": {
-    "message": "تېكىستتىن سۆزلەش ئاۋازى"
-  },
-  "lblTtsVolume": {
-    "message": "تېكىستتىن سۆزلەش ئاۋازى"
-  },
   "enterShortcut": {
     "message": "تېزلەتمە كىرگۈزۈڭ"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "DeepL غا تەرجىمە مۇلازىمىتىنى تەڭشىمەكچىمۇ؟\nيېڭى بەتكۈچ ئېچىلىدۇ ، تەرجىمە شۇ يەردە ئېلىپ بېرىلىدۇ."
-  },
-  "lblTextToSpeechService": {
-    "message": "تېكىستتىن سۆزلەش مۇلازىمىتى"
   },
   "msgDeepLTabReasoOpened": {
     "message": "DeepL ئارقىلىق تاللانغان تېكىستنى تەرجىمە قىلىشنى چەككەنلىكىڭىز ئۈچۈن بۇ بەتكۈچ ئېچىلدى."

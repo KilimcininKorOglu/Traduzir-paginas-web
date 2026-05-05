@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Wilt u de extensie herstellen naar de standaardinstellingen?"
   },
-  "lblTtsSpeed": {
-    "message": "Tekst-naar-spraak audiosnelheid"
-  },
-  "lblTtsVolume": {
-    "message": "Audiovolume voor tekst-naar-spraak"
-  },
   "enterShortcut": {
     "message": "Typ een sneltoets"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Weet u zeker dat u de vertaalservice op DeepL wilt instellen?\nEr wordt een nieuw tabblad geopend en daar vindt de vertaling plaats."
-  },
-  "lblTextToSpeechService": {
-    "message": "Tekst-naar-spraak-service"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Dit tabblad is geopend omdat u hebt geklikt om de geselecteerde tekst te vertalen met DeepL."

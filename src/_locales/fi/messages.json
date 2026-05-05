@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Haluatko palauttaa laajennuksen oletusasetuksiin?"
   },
-  "lblTtsSpeed": {
-    "message": "Tekstistä puheeksi äänen nopeus"
-  },
-  "lblTtsVolume": {
-    "message": "Tekstistä puheeksi äänenvoimakkuus"
-  },
   "enterShortcut": {
     "message": "Kirjoita pikakuvake"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Haluatko varmasti asettaa käännöspalvelun DeepL:ksi?\nUusi välilehti avautuu, ja käännös tapahtuu siellä."
-  },
-  "lblTextToSpeechService": {
-    "message": "Tekstistä puheeksi -palvelu"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Tämä välilehti avautui, koska klikkasit kääntääksesi valitun tekstin DeepL:llä."

@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "هل تريد استعادة الملحق إلى الإعدادات الافتراضية؟"
   },
-  "lblTtsSpeed": {
-    "message": "سرعة صوت تحويل النص إلى كلام"
-  },
-  "lblTtsVolume": {
-    "message": "حجم الصوت تحويل النص إلى كلام"
-  },
   "enterShortcut": {
     "message": "أدخل الاختصار"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "هل أنت متأكد أنك تريد تعيين خدمة الترجمة على DeepL؟\nسيتم فتح علامة تبويب جديدة، وستتم الترجمة هناك."
-  },
-  "lblTextToSpeechService": {
-    "message": "خدمة تحويل النص إلى كلام"
   },
   "msgDeepLTabReasoOpened": {
     "message": "تم فتح علامة التبويب هذه لأنك نقرت لترجمة النص المحدد باستخدام DeepL."

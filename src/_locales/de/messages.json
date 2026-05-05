@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Wollen Sie die Erweiterung auf ihre Standardeinstellungen zurücksetzen?"
   },
-  "lblTtsSpeed": {
-    "message": "Sprachausgabegeschwindigkeit"
-  },
-  "lblTtsVolume": {
-    "message": "Lautstärke der Sprachausgabe"
-  },
   "enterShortcut": {
     "message": "Tastenkürzel eingeben"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Sind Sie sicher, dass Sie den Übersetzungsdienst auf DeepL einstellen möchten?\nEs öffnet sich ein neuer Tab und die Übersetzung findet dort statt."
-  },
-  "lblTextToSpeechService": {
-    "message": "Text-to-Speech-Dienst"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Dieser Tab wurde geöffnet, da Sie ausgewählt haben, den Text mit DeepL zu übersetzen."

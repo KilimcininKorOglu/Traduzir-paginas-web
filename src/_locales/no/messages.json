@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Vil du gjenopprette utvidelsen til standardinnstillingene?"
   },
-  "lblTtsSpeed": {
-    "message": "Tekst-til-tale lydhastighet"
-  },
-  "lblTtsVolume": {
-    "message": "Tekst-til-tale lydvolum"
-  },
   "enterShortcut": {
     "message": "Skriv inn en snarvei"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Er du sikker på at du vil sette oversettelsestjenesten til DeepL?\nEn ny fane åpnes, og oversettelsen vil finne sted der."
-  },
-  "lblTextToSpeechService": {
-    "message": "Tekst-til-tale-tjeneste"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Denne fanen åpnet fordi du klikket for å oversette valgt tekst ved hjelp av DeepL."

@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "拡張機能を初期設定に戻しますか？"
   },
-  "lblTtsSpeed": {
-    "message": "音声読み上げの速度"
-  },
-  "lblTtsVolume": {
-    "message": "音声読み上げの音量"
-  },
   "enterShortcut": {
     "message": "ショートカットを入力"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "本当に翻訳サービスをDeepLに設定しますか？\n翻訳は新しいタブで行われるようになります。"
-  },
-  "lblTextToSpeechService": {
-    "message": "テキスト読み上げサービス"
   },
   "msgDeepLTabReasoOpened": {
     "message": "DeepLで選択したテキストを翻訳したため、このタブが開かれました。"

@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Viltu endurheimta forritsaukann til að nota sjálfgefnar stillingar sínar?"
   },
-  "lblTtsSpeed": {
-    "message": "Hljóðhraði gervitals"
-  },
-  "lblTtsVolume": {
-    "message": "Hljóðstyrkur gervitals"
-  },
   "enterShortcut": {
     "message": "Sláðu inn flýtileið"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Ertu viss um að þú viljir stilla þýðingarþjónustuna í DeepL.\nNýr flipi mun opnast og þýðingin mun fara fram þar."
-  },
-  "lblTextToSpeechService": {
-    "message": "Talgervingarþjónusta"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Þessi flipi opnaðist vegna þess að þú smelltir til að þýða valinn texta með DeepL."

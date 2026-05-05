@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Wil jy die uitbreiding na sy verstekinstellings herstel?"
   },
-  "lblTtsSpeed": {
-    "message": "Teks-na-spraak klank spoed"
-  },
-  "lblTtsVolume": {
-    "message": "Teks-na-spraak klankvolume"
-  },
   "enterShortcut": {
     "message": "Tik 'n kortpad"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Is jy seker jy wil die vertaaldiens op DeepL stel?\n'n Nuwe oortjie sal oopmaak, en die vertaling sal daar plaasvind."
-  },
-  "lblTextToSpeechService": {
-    "message": "Teks-na-spraak diens"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Hierdie oortjie het oopgemaak omdat jy geklik het om geselekteerde teks met DeepL te vertaal."

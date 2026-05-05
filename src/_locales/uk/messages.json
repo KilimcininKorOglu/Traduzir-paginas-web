@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Ви дійсно бажаєте відновити типові налаштування розширення?"
   },
-  "lblTtsSpeed": {
-    "message": "Швидкість перетворення звуку Text-to-speech"
-  },
-  "lblTtsVolume": {
-    "message": "Гучність звуку синтезу мовлення"
-  },
   "enterShortcut": {
     "message": "Введіть комбінацію"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Ви впевнені, що хочете встановити службу перекладу на DeepL?\nВідкриється нова вкладка, у якій відбудеться переклад."
-  },
-  "lblTextToSpeechService": {
-    "message": "Служба синтезу мовлення"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Ця вкладка відкрилася, тому що ви натиснули, щоб перекласти виділений текст за допомогою DeepL."

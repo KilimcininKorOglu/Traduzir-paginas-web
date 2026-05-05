@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Chcete obnovit rozšíření do výchozího nastavení?"
   },
-  "lblTtsSpeed": {
-    "message": "Rychlost audia textu na řeč"
-  },
-  "lblTtsVolume": {
-    "message": "Hlasitost zvuku převodu na řeč"
-  },
   "enterShortcut": {
     "message": "Stiskněte zkratku"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Opravdu chcete nastavit překladatelskou službu na DeepL?\nOtevře se nová karta a tam se provede překlad."
-  },
-  "lblTextToSpeechService": {
-    "message": "Služba převodu textu na řeč"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Tato záložka byla otevřena, protože jste klikli na překlad vybraného textu pomocí DeepL."

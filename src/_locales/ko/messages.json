@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "확장 기능을 기본 설정으로 복원하시겠습니까?"
   },
-  "lblTtsSpeed": {
-    "message": "텍스트 음성 변환 오디오 속도"
-  },
-  "lblTtsVolume": {
-    "message": "텍스트 음성 변환 오디오 볼륨"
-  },
   "enterShortcut": {
     "message": "단축키 입력"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "번역 서비스를 DeepL로 설정하시겠습니까? 새 탭을 열고 그곳에서 번역을 수행하게 됩니다."
-  },
-  "lblTextToSpeechService": {
-    "message": "문자 음성 변환 서비스"
   },
   "msgDeepLTabReasoOpened": {
     "message": "선택한 텍스트를 DeepL로 번역한다고 선택하셔서 이 탭이 열렸습니다."

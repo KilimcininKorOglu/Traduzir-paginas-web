@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Ali želite obnoviti razširitev na privzete nastavitve?"
   },
-  "lblTtsSpeed": {
-    "message": "Hitrost zvoka besedila v govor"
-  },
-  "lblTtsVolume": {
-    "message": "Glasnost zvoka pretvorbe besedila v govor"
-  },
   "enterShortcut": {
     "message": "Vnesite bližnjico"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Ali ste prepričani, da želite prevajalsko storitev nastaviti na DeepL?\nOdprl se bo nov zavihek in tam bo izveden prevod."
-  },
-  "lblTextToSpeechService": {
-    "message": "Storitev pretvorbe besedila v govor"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Ta zavihek se je odprl, ker ste kliknili za prevod izbranega besedila z uporabo DeepL."

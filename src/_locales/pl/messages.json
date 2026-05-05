@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Czy na pewno chcesz zresetować rozszerzenie do ustawień fabrycznych?"
   },
-  "lblTtsSpeed": {
-    "message": "Prędkość dźwięku tekstu na mowę"
-  },
-  "lblTtsVolume": {
-    "message": "Głośność dźwięku zamiany tekstu na mowę"
-  },
   "enterShortcut": {
     "message": "Wprowadź skrót klawiszowy"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Czy na pewno chcesz ustawić usługę tłumaczenia na DeepL?\nOtworzy się nowa karta, w której odbędzie się tłumaczenie."
-  },
-  "lblTextToSpeechService": {
-    "message": "Usługa zamiany tekstu na mowę"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Ta karta została otwarta, ponieważ została wybrana opcja przetłumaczenia zaznaczonego tekstu za pomocą DeepL."

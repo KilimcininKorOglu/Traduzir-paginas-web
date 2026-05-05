@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Bạn có muốn khôi phục cài đặt về mặc định không?"
   },
-  "lblTtsSpeed": {
-    "message": "Tốc độ âm thanh chuyển văn bản thành giọng nói"
-  },
-  "lblTtsVolume": {
-    "message": "Âm lượng của chuyển văn bản thành giọng nói"
-  },
   "enterShortcut": {
     "message": "Nhập một phím tắt"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Bạn có chắc chắn là muốn chuyển dịch vụ dịch thuật sang DeepL?\nMột thẻ mới sẽ mở, và bản dịch sẽ dịch ở đó."
-  },
-  "lblTextToSpeechService": {
-    "message": "Dịch vụ chuyển văn bản thành giọng nói"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Tab này mở ra vì bạn đã nhấp để dịch văn bản đã chọn sử dụng DeepL."

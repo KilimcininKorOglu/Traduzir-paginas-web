@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Deseja restaurar a extensão para as configurações padrão?"
   },
-  "lblTtsSpeed": {
-    "message": "Velocidade de áudio do texto em voz"
-  },
-  "lblTtsVolume": {
-    "message": "Volume do áudio do texto em voz"
-  },
   "enterShortcut": {
     "message": "Digite um atalho"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Tem certeza de que deseja definir o serviço de tradução para DeepL?\nUma nova guia será aberta e a tradução ocorrerá lá."
-  },
-  "lblTextToSpeechService": {
-    "message": "Serviço de conversão de texto em voz"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Esta guia foi aberta porque você clicou para traduzir o texto selecionado usando DeepL."

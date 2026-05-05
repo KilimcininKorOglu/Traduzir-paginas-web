@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "要恢复扩展至默认设置吗？"
   },
-  "lblTtsSpeed": {
-    "message": "文字转语音的语速"
-  },
-  "lblTtsVolume": {
-    "message": "文本转语音音量"
-  },
   "enterShortcut": {
     "message": "输入一个快捷键"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "您确定要将翻译服务设置为 DeepL 吗？\n使用 DeepL 翻译文本时将会打开一个新选项卡，并在那里进行翻译。"
-  },
-  "lblTextToSpeechService": {
-    "message": "文本转语音服务"
   },
   "msgDeepLTabReasoOpened": {
     "message": "此选项卡打开是因为您单击使用 DeepL 翻译所选文本。"

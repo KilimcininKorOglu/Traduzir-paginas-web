@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Vrei să restabilești reglările inițiale ale extensiei?"
   },
-  "lblTtsSpeed": {
-    "message": "Viteza de pronunțare a textului"
-  },
-  "lblTtsVolume": {
-    "message": "Volumul pronunțării textului"
-  },
   "enterShortcut": {
     "message": "Tastează o comandă rapidă"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Sigur vrei să alegi ca serviciul de traducere să fie DeepL?\nSe va deschide o pagină nouă, iar traducerea va avea loc acolo."
-  },
-  "lblTextToSpeechService": {
-    "message": "Serviciu de pronunțare a textului"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Această pagină s-a deschis deoarece ai făcut clic pentru a traduce textul ales folosind DeepL."

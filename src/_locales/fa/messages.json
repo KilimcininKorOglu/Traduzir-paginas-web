@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "آیا می خواهید افزونه را به تنظیمات پیش فرض خود بازگردانید؟"
   },
-  "lblTtsSpeed": {
-    "message": "سرعت تبدیل متن به گفتار"
-  },
-  "lblTtsVolume": {
-    "message": "حجم صدا تبدیل متن به گفتار"
-  },
   "enterShortcut": {
     "message": "یک میانبر تایپ کنید"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "آیا مطمئن هستید که می خواهید سرویس ترجمه را روی DeepL تنظیم کنید؟\nیک برگه جدید باز می شود و ترجمه در آنجا انجام می شود."
-  },
-  "lblTextToSpeechService": {
-    "message": "سرویس تبدیل متن به گفتار"
   },
   "msgDeepLTabReasoOpened": {
     "message": "این برگه باز شد زیرا برای ترجمه متن انتخابی با استفاده از DeepL کلیک کردید."

@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "আপনি কি এক্সটেনশনটিকে এর ডিফল্ট সেটিংসে পুনরুদ্ধার করতে চান?"
   },
-  "lblTtsSpeed": {
-    "message": "টেক্সট-টু-স্পিচ অডিও গতি"
-  },
-  "lblTtsVolume": {
-    "message": "টেক্সট-টু-স্পিচ অডিও ভলিউম"
-  },
   "enterShortcut": {
     "message": "শর্টকাট লিখুন"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "আপনি কি অনুবাদ পরিষেবাটিকে DeepL-এ সেট করার বিষয়ে নিশ্চিত?\nএকটি নতুন ট্যাব খুলবে, এবং অনুবাদ সেখানে সঞ্চালিত হবে।"
-  },
-  "lblTextToSpeechService": {
-    "message": "টেক্সট-টু-স্পিচ পরিষেবা"
   },
   "msgDeepLTabReasoOpened": {
     "message": "এই ট্যাবটি খোলা হয়েছে কারণ আপনি DeepL ব্যবহার করে নির্বাচিত পাঠ্য অনুবাদ করতে ক্লিক করেছেন।"

@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Uzantıyı varsayılan ayarlarına döndürmek istiyor musunuz?"
   },
-  "lblTtsSpeed": {
-    "message": "Okuma hızı"
-  },
-  "lblTtsVolume": {
-    "message": "Ses düzeyi"
-  },
   "enterShortcut": {
     "message": "Kısayol girin"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Çeviri hizmetini DeepL olarak ayarlamak istediğinizden emin misiniz?\n Yeni bir sekme açılacak ve çeviri orada gerçekleşecek."
-  },
-  "lblTextToSpeechService": {
-    "message": "Metin okuma hizmeti"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Bu sekme, seçilen metni DeepL kullanarak çevirmek için tıkladığınızda açıldı."

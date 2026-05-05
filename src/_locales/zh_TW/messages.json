@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "您要將擴充套件重設回預設嗎？"
   },
-  "lblTtsSpeed": {
-    "message": "文字轉語音速度"
-  },
-  "lblTtsVolume": {
-    "message": "文字轉語音音量"
-  },
   "enterShortcut": {
     "message": "輸入快速鍵"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "您確定要將 DeepL 設爲翻譯服務嗎？\n這樣會打開一張新分頁，並在新分頁裏翻譯。"
-  },
-  "lblTextToSpeechService": {
-    "message": "文字轉語音服務"
   },
   "msgDeepLTabReasoOpened": {
     "message": "此標籤開啟是因為您點擊使用 DeepL 翻譯所選文字。"

@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Voulez-vous restaurer les paramètres par défaut de l'extension ?"
   },
-  "lblTtsSpeed": {
-    "message": "Vitesse de la synthèse vocale"
-  },
-  "lblTtsVolume": {
-    "message": "Volume audio de la synthèse vocale"
-  },
   "enterShortcut": {
     "message": "Tapez un raccourci"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Êtes-vous sûr de vouloir définir le service de traduction sur DeepL ?\nUn nouvel onglet s'ouvrira et la traduction s'y déroulera."
-  },
-  "lblTextToSpeechService": {
-    "message": "Service de synthèse vocale"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Cet onglet s'est ouvert parce que vous avez cliqué pour traduire le texte sélectionné à l'aide de DeepL."

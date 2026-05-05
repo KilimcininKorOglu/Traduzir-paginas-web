@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Visszaállítja a bővítmény alapértelmezett beállításait?"
   },
-  "lblTtsSpeed": {
-    "message": "Felolvasási hang sebesség"
-  },
-  "lblTtsVolume": {
-    "message": "Szövegfelolvasó hangereje"
-  },
   "enterShortcut": {
     "message": "Gyorsbillentyű megadása"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Biztos, hogy a fordítási szolgáltatást a DeepL-re szeretné beállítani?\nEgy új lap fog megnyílni, és a fordítás ott fog megtörténni."
-  },
-  "lblTextToSpeechService": {
-    "message": "Szövegfelolvasó (TTS) szolgáltatás"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Ez a lap azért nyílt meg, mert rákattintott a kijelölt szöveg DeepL-leé történő lefordításához."

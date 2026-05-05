@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Voleu restaurar els paràmetres predeterminats de l'extensió?"
   },
-  "lblTtsSpeed": {
-    "message": "Velocitat de lectura del text"
-  },
-  "lblTtsVolume": {
-    "message": "Volum d'àudio de text a veu"
-  },
   "enterShortcut": {
     "message": "Escriviu una drecera"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Esteu segur que voleu configurar el servei de traducció a DeepL?\nS'obrirà una pestanya nova i la traducció es farà allà."
-  },
-  "lblTextToSpeechService": {
-    "message": "Servei de text a veu"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Aquesta pestanya s'ha obert perquè heu fet clic per traduir el text seleccionat amb DeepL."

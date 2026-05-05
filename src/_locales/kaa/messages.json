@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Keńeytpeni standart sazlawlarına qaytarmaqshısızba?"
   },
-  "lblTtsSpeed": {
-    "message": "Tekstti sóylew tezligi"
-  },
-  "lblTtsVolume": {
-    "message": "Text-to-speech audio volume"
-  },
   "enterShortcut": {
     "message": "Kombinatsiya kiritiń"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Haqıyqattan da awdarma xızmetin DeepL ǵa ornatpaqshısızba?\n Jańa jarlıq ashıladı hám awdarma sol orında ámelge asıriladı."
-  },
-  "lblTextToSpeechService": {
-    "message": "Tekstti sózlewge aylandırıw xızmeti"
   },
   "msgDeepLTabReasoOpened": {
     "message": "This tab opened because you clicked to translate selected text using DeepL."

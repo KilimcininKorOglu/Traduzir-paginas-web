@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "Vill du återställa tillägget till standardinställningarna?"
   },
-  "lblTtsSpeed": {
-    "message": "Ljudhastighet för text-till-tal"
-  },
-  "lblTtsVolume": {
-    "message": "Text-till-tal ljudvolym"
-  },
   "enterShortcut": {
     "message": "Skriv en genväg"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "Är du säker på att du vill ställa in översättningstjänsten till DeepL?\nEn ny flik öppnas och översättningen kommer att ske där."
-  },
-  "lblTextToSpeechService": {
-    "message": "Text-till-tal-tjänst"
   },
   "msgDeepLTabReasoOpened": {
     "message": "Den här fliken öppnades eftersom du klickade för att översätta vald text med DeepL."

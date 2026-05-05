@@ -287,12 +287,6 @@
   "doYouWantRestoreSettings": {
     "message": "האם ברצונך לשחזר את התוסף להגדרת ברירת מחדל?"
   },
-  "lblTtsSpeed": {
-    "message": "הקראת טקסט - מהירות קול"
-  },
-  "lblTtsVolume": {
-    "message": "עוצמת קול של טקסט לדיבור"
-  },
   "enterShortcut": {
     "message": "הקלד קיצור דרך"
   },
@@ -533,9 +527,6 @@
   },
   "msgSetDeepLAlert": {
     "message": "האם אתה בטוח שברצונך להגדיר את שירות התרגום ל-DeepL?\nכרטיסייה חדשה תיפתח, והתרגום יתבצע שם."
-  },
-  "lblTextToSpeechService": {
-    "message": "שירות טקסט לדיבור"
   },
   "msgDeepLTabReasoOpened": {
     "message": "כרטיסייה זו נפתחה כי לחצת כדי לתרגם טקסט נבחר באמצעות DeepL."
