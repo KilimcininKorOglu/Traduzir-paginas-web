@@ -392,6 +392,16 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
   let currentTargetLanguage = twpConfig.get("targetLanguage");
   let currentPageTranslatorService = twpConfig.get("pageTranslatorService");
   let customDictionary = sortDictionary(twpConfig.get("customDictionary"));
+
+  const siteSpecificConfig = twpConfig.getSiteSpecificConfig(location.hostname);
+  if (siteSpecificConfig) {
+    if (siteSpecificConfig.targetLanguage) {
+      currentTargetLanguage = siteSpecificConfig.targetLanguage;
+    }
+    if (siteSpecificConfig.pageTranslatorService) {
+      currentPageTranslatorService = siteSpecificConfig.pageTranslatorService;
+    }
+  }
   let dontSortResults =
     twpConfig.get("dontSortResults") == "yes" ? true : false;
 
