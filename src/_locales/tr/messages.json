@@ -596,5 +596,26 @@
   },
   "btnChangePosition": {
     "message": "Konumu değiştir"
+  },
+  "lblSiteSpecificSettings": {
+    "message": "Siteye özel ayarlar"
+  },
+  "lblSiteSpecificTargetLanguage": {
+    "message": "Hedef dil"
+  },
+  "lblSiteSpecificService": {
+    "message": "Çeviri hizmeti"
+  },
+  "lblSiteSpecificDictionary": {
+    "message": "Özel sözlük"
+  },
+  "lblUseGlobalSetting": {
+    "message": "Genel ayarı kullan"
+  },
+  "lblSiteSpecificSave": {
+    "message": "Kaydet"
+  },
+  "lblSiteSpecificCancel": {
+    "message": "İptal"
   }
 }
