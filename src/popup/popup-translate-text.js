@@ -119,9 +119,6 @@ twpConfig
     const eTextTranslated = document.getElementById("eTextTranslated");
 
     const sGoogle = document.getElementById("sGoogle");
-    const sYandex = document.getElementById("sYandex");
-    const sBing = document.getElementById("sBing");
-    const sDeepL = document.getElementById("sDeepL");
     const sLibre = document.getElementById("sLibre");
     const eCopy = document.getElementById("copy");
 
@@ -159,51 +156,9 @@ twpConfig
       translateText();
 
       sGoogle.classList.remove("selected");
-      sYandex.classList.remove("selected");
-      sBing.classList.remove("selected");
-      sDeepL.classList.remove("selected");
       sLibre.classList.remove("selected");
 
       sGoogle.classList.add("selected");
-    };
-    sYandex.onclick = () => {
-      currentTextTranslatorService = "yandex";
-      twpConfig.set("textTranslatorService", "yandex");
-      translateText();
-
-      sGoogle.classList.remove("selected");
-      sYandex.classList.remove("selected");
-      sBing.classList.remove("selected");
-      sDeepL.classList.remove("selected");
-      sLibre.classList.remove("selected");
-
-      sYandex.classList.add("selected");
-    };
-    sBing.onclick = () => {
-      currentTextTranslatorService = "bing";
-      twpConfig.set("textTranslatorService", "bing");
-      translateText();
-
-      sGoogle.classList.remove("selected");
-      sYandex.classList.remove("selected");
-      sBing.classList.remove("selected");
-      sDeepL.classList.remove("selected");
-      sLibre.classList.remove("selected");
-
-      sBing.classList.add("selected");
-    };
-    sDeepL.onclick = () => {
-      currentTextTranslatorService = "deepl";
-      twpConfig.set("textTranslatorService", "deepl");
-      translateText();
-
-      sGoogle.classList.remove("selected");
-      sYandex.classList.remove("selected");
-      sBing.classList.remove("selected");
-      sDeepL.classList.remove("selected");
-      sLibre.classList.remove("selected");
-
-      sDeepL.classList.add("selected");
     };
     sLibre.onclick = () => {
       currentTextTranslatorService = "libre";
@@ -211,9 +166,6 @@ twpConfig
       translateText();
 
       sGoogle.classList.remove("selected");
-      sYandex.classList.remove("selected");
-      sBing.classList.remove("selected");
-      sDeepL.classList.remove("selected");
       sLibre.classList.remove("selected");
 
       sLibre.classList.add("selected");
@@ -257,46 +209,19 @@ twpConfig
     }
 
     switch (currentTextTranslatorService) {
-      case "yandex":
-        sYandex.classList.add("selected");
-        break;
-      case "deepl":
-        sDeepL.classList.add("selected");
-        break;
-      case "bing":
-        sBing.classList.add("selected");
-        break;
       case "google":
         sGoogle.classList.add("selected");
         break;
       case "libre":
         sLibre.classList.add("selected");
+        break;
       default:
         sGoogle.classList.add("selected");
         break;
     }
 
-    const enabledServices = twpConfig.get("enabledServices");
-    if (enabledServices.includes("google")) {
-      sGoogle.removeAttribute("hidden");
-    } else {
-      sGoogle.setAttribute("hidden", "");
-    }
-    if (enabledServices.includes("bing")) {
-      sBing.removeAttribute("hidden");
-    } else {
-      sBing.setAttribute("hidden", "");
-    }
-    if (enabledServices.includes("yandex")) {
-      sYandex.removeAttribute("hidden");
-    } else {
-      sYandex.setAttribute("hidden", "");
-    }
-    if (enabledServices.includes("deepl")) {
-      sDeepL.removeAttribute("hidden");
-    } else {
-      sDeepL.setAttribute("hidden", "");
-    }
+    sGoogle.removeAttribute("hidden");
+
     if (twpConfig.get("customServices").find((cs) => cs.name === "libre")) {
       sLibre.removeAttribute("hidden");
     } else {
@@ -305,30 +230,6 @@ twpConfig
 
     twpConfig.onChanged((name, newvalue) => {
       switch (name) {
-        case "enabledServices": {
-          const enabledServices = newvalue;
-          if (enabledServices.includes("google")) {
-            sGoogle.removeAttribute("hidden");
-          } else {
-            sGoogle.setAttribute("hidden", "");
-          }
-          if (enabledServices.includes("bing")) {
-            sBing.removeAttribute("hidden");
-          } else {
-            sBing.setAttribute("hidden", "");
-          }
-          if (enabledServices.includes("yandex")) {
-            sYandex.removeAttribute("hidden");
-          } else {
-            sYandex.setAttribute("hidden", "");
-          }
-          if (enabledServices.includes("deepl")) {
-            sDeepL.removeAttribute("hidden");
-          } else {
-            sDeepL.setAttribute("hidden", "");
-          }
-          break;
-        }
         case "customServices": {
           if (newvalue.find((cs) => cs.name === "libre")) {
             sLibre.removeAttribute("hidden");

@@ -266,18 +266,7 @@ twpConfig
     let showSelectTargetLanguage = false;
 
     function updateInterface() {
-      if (currentPageTranslatorService == "yandex") {
-        $("#btnOptions option[value='translateInExternalSite']").textContent =
-          twpI18n.getMessage("msgOpenOnYandexTranslator");
-        $("#iconTranslate").setAttribute(
-          "src",
-          "/icons/yandex-translate-32.png"
-        );
-      } else if (currentPageTranslatorService == "bing") {
-        $("#btnOptions option[value='translateInExternalSite']").textContent =
-          twpI18n.getMessage("btnOpenOnGoogleTranslate");
-        $("#iconTranslate").setAttribute("src", "/icons/bing-translate-32.png");
-      } else {
+      {
         // google
         $("#btnOptions option[value='translateInExternalSite']").textContent =
           twpI18n.getMessage("btnOpenOnGoogleTranslate");
@@ -524,29 +513,6 @@ twpConfig
       window.location = "popup.html";
     });
 
-    $("#divIconTranslate").addEventListener("click", () => {
-      currentPageTranslatorService = twpConfig.swapPageTranslationService();
-
-      chrome.tabs.query(
-        {
-          active: true,
-          currentWindow: true,
-        },
-        (tabs) => {
-          chrome.tabs.sendMessage(
-            tabs[0].id,
-            {
-              action: "swapTranslationService",
-              newServiceName: currentPageTranslatorService,
-            },
-            checkedLastError
-          );
-        }
-      );
-
-      updateInterface();
-    });
-
     chrome.tabs.query(
       {
         active: true,
@@ -669,20 +635,12 @@ twpConfig
                   currentWindow: true,
                 },
                 (tabs) => {
-                  if (currentPageTranslatorService === "yandex") {
-                    tabsCreate(
-                      `https://translate.yandex.com/translate?view=compact&url=${encodeURIComponent(
-                        tabs[0].url
-                      )}&lang=${twpConfig.get("targetLanguage").split("-")[0]}`
-                    );
-                  } else {
-                    // google
-                    tabsCreate(
-                      `https://translate.google.com/translate?tl=${twpConfig.get(
-                        "targetLanguage"
-                      )}&u=${encodeURIComponent(tabs[0].url)}`
-                    );
-                  }
+                  // google
+                  tabsCreate(
+                    `https://translate.google.com/translate?tl=${twpConfig.get(
+                      "targetLanguage"
+                    )}&u=${encodeURIComponent(tabs[0].url)}`
+                  );
                 }
               );
               break;

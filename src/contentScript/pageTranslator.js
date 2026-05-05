@@ -12,9 +12,6 @@ const endMark = "#$";
 const startMark0 = "@ %";
 const endMark0 = "# $";
 
-const bingMarkFrontPart = '<mstrans:dictionary translation="';
-const bingMarkSecondPart = '"></mstrans:dictionary>';
-
 let currentIndex;
 let compressionMap;
 
@@ -22,13 +19,9 @@ let compressionMap;
  * ## custom dictionary functional preprocessing
  *
  * ### How to achieve:
- * 1. For Google and Yandex, this feature is not officially supported,
- *    we convert matching keywords to a string of special signs to skip translation,
- *    before sending to the translation engine,
- *    and after the results come back, call `handleCustomWords` to restore the words.
- * 2. For Bing, this feature is officially supported,
- *    we don't need to call `handleCustomWords`, Bing absorb these marks.
- *    And bing does not have the language restrictions in the third point below.
+ * We convert matching keywords to a string of special signs to skip translation,
+ * before sending to the translation engine,
+ * and after the results come back, call `handleCustomWords` to restore the words.
  *
  *  ### Notes:
  *  1. For English words, ignore case when matching.
@@ -67,26 +60,8 @@ function filterKeywordsInText(
             isPunctuationOrDelimiter(previousChar) &&
             isPunctuationOrDelimiter(nextChar)
           ) {
-            /**
-             * Bing's translation engine, officially provides custom dictionary function,
-             * so it has its own separate tags.
-             * At the same time we add a space before and after the word to make it look a little more comfortable.
-             * */
-            if (currentPageTranslatorService === "bing") {
-              let customValue = sortedCustomDictionary.get(keyWord);
-              if (customValue === "") customValue = keyWordWithCase;
-              customValue =
-                " " +
-                customValue.substring(0, 1) +
-                "#n%o#" +
-                customValue.substring(1) +
-                " ";
-              placeholderText =
-                bingMarkFrontPart + customValue + bingMarkSecondPart;
-            } else {
-              placeholderText =
+            placeholderText =
                 startMark + handleHitKeywords(keyWordWithCase, true) + endMark;
-            }
           } else {
             placeholderText = "#n%o#";
             for (let c of Array.from(keyWordWithCase)) {
@@ -109,10 +84,6 @@ function filterKeywordsInText(
  *  handle the keywords in translatedText, replace it if there is a custom replacement value.
  *  When encountering Google Translate reordering, the original text contains our mark, etc.
  *  we will catch these exceptions and call the text translation method to retranslate this section.
- *
- * Note:
- *  1. Bing's translation engine has its own separate tags,and the engine digests these tags internally,
- *  we don't need to call the method below.
  **/
 async function handleCustomWords(
   translated,
@@ -123,7 +94,7 @@ async function handleCustomWords(
   currentTargetLanguage
 ) {
   try {
-    if (customDictionary.size > 0 && currentPageTranslatorService !== "bing") {
+    if (customDictionary.size > 0) {
       // If the translation is a single word and exists in the dictionary, return it directly
       let customValue = customDictionary.get(originalText.trim());
       if (customValue) return customValue;
@@ -1238,13 +1209,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
     attributesToTranslate = [];
   };
 
-  pageTranslator.swapTranslationService = function (newServiceName) {
-    currentPageTranslatorService = newServiceName;
-    if (pageLanguageState === "translated") {
-      pageTranslator.translatePage();
-    }
-  };
-
   pageTranslator.improveTranslation = function (info) {
     currentPageTranslatorService = info.pageTranslatorService;
     dontSortResults = info.dontSortResults === "yes" ? true : false;
@@ -1287,8 +1251,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
       sendResponse(pageLanguageState);
     } else if (request.action === "getCurrentPageTranslatorService") {
       sendResponse(currentPageTranslatorService);
-    } else if (request.action === "swapTranslationService") {
-      pageTranslator.swapTranslationService(request.newServiceName);
     } else if (request.action === "toggle-translation") {
       if (pageLanguageState === "translated") {
         pageTranslator.restorePage();
@@ -1397,8 +1359,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
               if (
                 location.hostname !== "translate.googleusercontent.com" &&
                 location.hostname !== "translate.google.com" &&
-                location.hostname !== "translate.yandex.com" &&
-                location.hostname !== "www.deepl.com" &&
                 location.hostname !== "translated.turbopages.org" &&
                 !location.hostname.endsWith("translate.goog") &&
                 location.hostname !== "sberbank.com" &&

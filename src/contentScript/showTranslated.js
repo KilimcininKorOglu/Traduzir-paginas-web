@@ -25,10 +25,7 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
   let originalTabLanguage = "und";
   let currentTargetLanguages = twpConfig.get("targetLanguages");
   let currentTargetLanguage = twpConfig.get("targetLanguageTextTranslation");
-  let currentTextTranslatorService =
-    twpConfig.get("textTranslatorService") === "deepl"
-      ? "google"
-      : twpConfig.get("textTranslatorService");
+  let currentTextTranslatorService = twpConfig.get("textTranslatorService");
   let showTranslatedTextWhenHoveringThisSite =
     twpConfig.get("sitesToTranslateWhenHovering").indexOf(tabHostName) !== -1;
   let showTranslatedTextWhenHoveringThisLang = false;
@@ -39,8 +36,7 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
   twpConfig.onChanged(function (name, newValue) {
     switch (name) {
       case "textTranslatorService":
-        currentTextTranslatorService =
-          newValue === "deepl" ? "google" : newValue;
+        currentTextTranslatorService = newValue;
         break;
       case "targetLanguages":
         currentTargetLanguages = newValue;
@@ -394,9 +390,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
                     </ul>
                     <ul>
                         <li title="Google" id="sGoogle">g</li>
-                        <li title="Bing" id="sBing">b</li>
-                        <li title="Yandex" id="sYandex">y</li>
-                        <li title="DeepL" id="sDeepL" hidden>d</li>
                         <li title="Listen" data-i18n-title="btnListen" id="listen">
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             width="14px" height="12px" viewBox="0 0 93.038 93.038" xml:space="preserve">
@@ -519,9 +512,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
     eTextTranslated = shadowRoot.getElementById("eTextTranslated");
 
     const sGoogle = shadowRoot.getElementById("sGoogle");
-    const sYandex = shadowRoot.getElementById("sYandex");
-    const sBing = shadowRoot.getElementById("sBing");
-    const sDeepL = shadowRoot.getElementById("sDeepL");
 
     sGoogle.onclick = () => {
       currentTextTranslatorService = "google";
@@ -529,47 +519,8 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
       translateThisNode(null, true);
 
       sGoogle.classList.remove("selected");
-      sYandex.classList.remove("selected");
-      sBing.classList.remove("selected");
-      sDeepL.classList.remove("selected");
 
       sGoogle.classList.add("selected");
-    };
-    sYandex.onclick = () => {
-      currentTextTranslatorService = "yandex";
-      twpConfig.set("textTranslatorService", "yandex");
-      translateThisNode(null, true);
-
-      sGoogle.classList.remove("selected");
-      sYandex.classList.remove("selected");
-      sBing.classList.remove("selected");
-      sDeepL.classList.remove("selected");
-
-      sYandex.classList.add("selected");
-    };
-    sBing.onclick = () => {
-      currentTextTranslatorService = "bing";
-      twpConfig.set("textTranslatorService", "bing");
-      translateThisNode(null, true);
-
-      sGoogle.classList.remove("selected");
-      sYandex.classList.remove("selected");
-      sBing.classList.remove("selected");
-      sDeepL.classList.remove("selected");
-
-      sBing.classList.add("selected");
-    };
-    sDeepL.onclick = () => {
-      currentTextTranslatorService = "deepl";
-      twpConfig.set("textTranslatorService", "deepl");
-      translateThisNode(null, true);
-
-      sGoogle.classList.remove("selected");
-      sYandex.classList.remove("selected");
-      sBing.classList.remove("selected");
-      sDeepL.classList.remove("selected");
-
-      sDeepL.classList.add("selected");
     };
 
     const setTargetLanguage = shadowRoot.getElementById("setTargetLanguage");
@@ -613,15 +564,7 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
       );
     }
 
-    if (currentTextTranslatorService === "yandex") {
-      sYandex.classList.add("selected");
-    } else if (currentTextTranslatorService == "deepl") {
-      sDeepL.classList.add("selected");
-    } else if (currentTextTranslatorService == "bing") {
-      sBing.classList.add("selected");
-    } else {
-      sGoogle.classList.add("selected");
-    }
+    sGoogle.classList.add("selected");
   }
 
   function destroy() {

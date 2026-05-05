@@ -231,9 +231,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
 				<div id="moreOrLess"><i class="arrow up" id="more"></i><i class="arrow down" id="less"></i></div>
 				<ul>
 					<li title="Google" id="sGoogle">g</li>
-					<li title="Bing" id="sBing">b</li>
-					<li title="Yandex" id="sYandex">y</li>
-					<li title="DeepL" id="sDeepL" hidden>d</li>
 					<li title="Libretranslate" id="sLibre" hidden>l</li>
 					<li style="opacity: 0; cursor: move;">O</li>
 				</ul>
@@ -364,9 +361,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
     const eLess = shadowRoot.getElementById("less");
 
     const sGoogle = shadowRoot.getElementById("sGoogle");
-    const sYandex = shadowRoot.getElementById("sYandex");
-    const sBing = shadowRoot.getElementById("sBing");
-    const sDeepL = shadowRoot.getElementById("sDeepL");
     const sLibre = shadowRoot.getElementById("sLibre");
     const eCopy = shadowRoot.getElementById("copy");
     const eReplace = shadowRoot.getElementById("replace");
@@ -471,58 +465,9 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
       translateNewInput();
 
       sGoogle.classList.remove("selected");
-      sYandex.classList.remove("selected");
-      sBing.classList.remove("selected");
-      sDeepL.classList.remove("selected");
       sLibre.classList.remove("selected");
 
       sGoogle.classList.add("selected");
-    };
-    sYandex.onclick = () => {
-      currentTextTranslatorService = "yandex";
-      twpConfig.set("textTranslatorService", "yandex");
-      translateNewInput();
-
-      sGoogle.classList.remove("selected");
-      sYandex.classList.remove("selected");
-      sBing.classList.remove("selected");
-      sDeepL.classList.remove("selected");
-      sLibre.classList.remove("selected");
-
-      sYandex.classList.add("selected");
-    };
-    sBing.onclick = () => {
-      currentTextTranslatorService = "bing";
-      twpConfig.set("textTranslatorService", "bing");
-      translateNewInput();
-
-      sGoogle.classList.remove("selected");
-      sYandex.classList.remove("selected");
-      sBing.classList.remove("selected");
-      sDeepL.classList.remove("selected");
-      sLibre.classList.remove("selected");
-
-      sBing.classList.add("selected");
-    };
-    sDeepL.onclick = () => {
-      if (
-        twpConfig.get("deepl_confirmed") === "yes" ||
-        confirm(twpI18n.getMessage("msgSetDeepLAlert"))
-      ) {
-        twpConfig.set("deepl_confirmed", "yes");
-
-        currentTextTranslatorService = "deepl";
-        twpConfig.set("textTranslatorService", "deepl");
-        translateNewInput();
-
-        sGoogle.classList.remove("selected");
-        sYandex.classList.remove("selected");
-        sBing.classList.remove("selected");
-        sDeepL.classList.remove("selected");
-        sLibre.classList.remove("selected");
-
-        sDeepL.classList.add("selected");
-      }
     };
     sLibre.onclick = () => {
       currentTextTranslatorService = "libre";
@@ -530,9 +475,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
       translateNewInput();
 
       sGoogle.classList.remove("selected");
-      sYandex.classList.remove("selected");
-      sBing.classList.remove("selected");
-      sDeepL.classList.remove("selected");
       sLibre.classList.remove("selected");
 
       sLibre.classList.add("selected");
@@ -588,39 +530,12 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
       );
     }
 
-    if (currentTextTranslatorService === "yandex") {
-      sYandex.classList.add("selected");
-    } else if (currentTextTranslatorService == "deepl") {
-      sDeepL.classList.add("selected");
-    } else if (currentTextTranslatorService == "bing") {
-      sBing.classList.add("selected");
-    } else if (currentTextTranslatorService == "libre") {
+    if (currentTextTranslatorService == "libre") {
       sLibre.classList.add("selected");
     } else {
       sGoogle.classList.add("selected");
     }
 
-    const enabledServices = twpConfig.get("enabledServices");
-    if (enabledServices.includes("google")) {
-      sGoogle.removeAttribute("hidden");
-    } else {
-      sGoogle.setAttribute("hidden", "");
-    }
-    if (enabledServices.includes("bing")) {
-      sBing.removeAttribute("hidden");
-    } else {
-      sBing.setAttribute("hidden", "");
-    }
-    if (enabledServices.includes("yandex")) {
-      sYandex.removeAttribute("hidden");
-    } else {
-      sYandex.setAttribute("hidden", "");
-    }
-    if (enabledServices.includes("deepl")) {
-      sDeepL.removeAttribute("hidden");
-    } else {
-      sDeepL.setAttribute("hidden", "");
-    }
     if (twpConfig.get("customServices").find((cs) => cs.name === "libre")) {
       sLibre.removeAttribute("hidden");
     } else {
@@ -646,30 +561,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
 
     twpConfig.onChanged((name, newvalue) => {
       switch (name) {
-        case "enabledServices": {
-          const enabledServices = newvalue;
-          if (enabledServices.includes("google")) {
-            sGoogle.removeAttribute("hidden");
-          } else {
-            sGoogle.setAttribute("hidden", "");
-          }
-          if (enabledServices.includes("bing")) {
-            sBing.removeAttribute("hidden");
-          } else {
-            sBing.setAttribute("hidden", "");
-          }
-          if (enabledServices.includes("yandex")) {
-            sYandex.removeAttribute("hidden");
-          } else {
-            sYandex.setAttribute("hidden", "");
-          }
-          if (enabledServices.includes("deepl")) {
-            sDeepL.removeAttribute("hidden");
-          } else {
-            sDeepL.setAttribute("hidden", "");
-          }
-          break;
-        }
         case "customServices": {
           if (newvalue.find((cs) => cs.name === "libre")) {
             sLibre.removeAttribute("hidden");

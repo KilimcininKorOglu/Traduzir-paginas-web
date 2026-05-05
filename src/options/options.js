@@ -1036,10 +1036,6 @@ twpConfig
           i18n: "msgTranslateSelectedText",
         },
         {
-          key: "hotkey-swap-page-translation-service",
-          i18n: "swapTranslationService",
-        },
-        {
           key: "hotkey-show-original",
           i18n: "lblRestorePageToOriginal",
         },
@@ -1248,111 +1244,6 @@ twpConfig
       });
     }
 
-    // privacy options
-    $("#useAlternativeService").oninput = (e) => {
-      twpConfig.set("useAlternativeService", e.target.value);
-    };
-    $("#useAlternativeService").value = twpConfig.get("useAlternativeService");
-
-    {
-      if (platformInfo.isMobile.any) {
-        $("#btnEnableDeepL").setAttribute("disabled", "");
-      }
-
-      const updateServiceSelector = (enabledServices) => {
-        document
-          .querySelectorAll("#pageTranslatorService option")
-          .forEach((option) => option.setAttribute("hidden", ""));
-        document
-          .querySelectorAll("#textTranslatorService option")
-          .forEach((option) => option.setAttribute("hidden", ""));
-        enabledServices.forEach((svName) => {
-          let option;
-          option = $(`#pageTranslatorService option[value="${svName}"]`);
-          if (option) {
-            option.removeAttribute("hidden");
-          }
-          option = $(`#textTranslatorService option[value="${svName}"]`);
-          if (option) {
-            option.removeAttribute("hidden");
-          }
-        });
-      };
-
-      const servicesInfo = [
-        { selector: "#btnEnableGoogle", svName: "google" },
-        { selector: "#btnEnableBing", svName: "bing" },
-        { selector: "#btnEnableYandex", svName: "yandex" },
-        { selector: "#btnEnableDeepL", svName: "deepl" },
-      ];
-
-      servicesInfo.forEach((svInfo) => {
-        $(svInfo.selector).oninput = (e) => {
-          const enabledServices = [];
-          let enabledCount = 0;
-          servicesInfo.forEach((_svInfo) => {
-            if ($(_svInfo.selector).checked) {
-              enabledCount++;
-            }
-          });
-          if (
-            enabledCount === 0 ||
-            (enabledCount === 1 && $("#btnEnableDeepL").checked)
-          ) {
-            if (e.target === $("#btnEnableGoogle")) {
-              $("#btnEnableBing").checked = true;
-            } else {
-              $("#btnEnableGoogle").checked = true;
-            }
-          }
-          servicesInfo.forEach((_svInfo) => {
-            if ($(_svInfo.selector).checked) {
-              enabledServices.push(_svInfo.svName);
-            }
-          });
-
-          if (
-            !enabledServices.includes(twpConfig.get("textTranslatorService"))
-          ) {
-            twpConfig.set("textTranslatorService", enabledServices[0]);
-          }
-          if (
-            !enabledServices.includes(twpConfig.get("pageTranslatorService"))
-          ) {
-            twpConfig.set("pageTranslatorService", enabledServices[0]);
-          }
-
-          const pageTranslationServices = ["google", "bing", "yandex"];
-          chrome.runtime.sendMessage(
-            {
-              action: "restorePagesWithServiceNames",
-              serviceNames: pageTranslationServices.filter(
-                (svName) => !enabledServices.includes(svName)
-              ),
-              newServiceName: twpConfig.get("pageTranslatorService"),
-            },
-            checkedLastError
-          );
-
-          twpConfig.set("enabledServices", enabledServices);
-
-          $("#pageTranslatorService").value = twpConfig.get(
-            "pageTranslatorService"
-          );
-          $("#textTranslatorService").value = twpConfig.get(
-            "textTranslatorService"
-          );
-          updateServiceSelector(enabledServices);
-        };
-        $(svInfo.selector).checked =
-          twpConfig.get("enabledServices").indexOf(svInfo.svName) === -1
-            ? false
-            : true;
-
-        updateServiceSelector(twpConfig.get("enabledServices"));
-      });
-    }
-
     // storage options
     $("#deleteTranslationCache").onclick = (e) => {
       if (confirm(twpI18n.getMessage("doYouWantToDeleteTranslationCache"))) {
@@ -1546,78 +1437,6 @@ twpConfig
     if (libre) {
       $("#libreURL").value = libre.url;
       $("#libreKEY").value = libre.apiKey;
-    }
-
-    async function testDeepLFreeApiKey(apiKey) {
-      return await new Promise((resolve) => {
-        const xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "https://api-free.deepl.com/v2/usage");
-        xhttp.responseType = "json";
-        xhttp.setRequestHeader("Authorization", "DeepL-Auth-Key " + apiKey);
-        xhttp.onload = () => {
-          resolve(xhttp.response);
-        };
-        xhttp.send();
-      });
-    }
-
-    $("#addDeepL").onclick = async () => {
-      const deepl_freeapi = {
-        name: "deepl_freeapi",
-        apiKey: $("#deeplKEY").value,
-      };
-      try {
-        const response = await testDeepLFreeApiKey(deepl_freeapi.apiKey);
-        $("#deeplApiResponse").textContent = JSON.stringify(response);
-        if (response) {
-          const customServices = twpConfig.get("customServices");
-
-          const index = customServices.findIndex(
-            (cs) => cs.name === "deepl_freeapi"
-          );
-          if (index !== -1) {
-            customServices.splice(index, 1);
-          }
-
-          customServices.push(deepl_freeapi);
-          twpConfig.set("customServices", customServices);
-          chrome.runtime.sendMessage({
-            action: "createDeeplFreeApiService",
-            deepl_freeapi,
-          });
-        } else {
-          alert("Invalid API key");
-        }
-      } catch (e) {
-        alert(e);
-      }
-    };
-
-    $("#removeDeepL").onclick = () => {
-      const customServices = twpConfig.get("customServices");
-      const index = customServices.findIndex(
-        (cs) => cs.name === "deepl_freeapi"
-      );
-      if (index !== -1) {
-        customServices.splice(index, 1);
-        twpConfig.set("customServices", customServices);
-        chrome.runtime.sendMessage(
-          { action: "removeDeeplFreeApiService" },
-          checkedLastError
-        );
-      }
-      $("#deeplKEY").value = "";
-      $("#deeplApiResponse").textContent = "";
-    };
-
-    const deepl_freeapi = twpConfig
-      .get("customServices")
-      .find((cs) => cs.name === "deepl_freeapi");
-    if (deepl_freeapi) {
-      $("#deeplKEY").value = deepl_freeapi.apiKey;
-      testDeepLFreeApiKey(deepl_freeapi.apiKey).then((response) => {
-        $("#deeplApiResponse").textContent = JSON.stringify(response);
-      });
     }
 
     $("#showMobilePopupOnDesktop").onchange = (e) => {
