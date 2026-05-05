@@ -636,6 +636,182 @@ twpConfig
       twpConfig.addSiteToTranslateWhenHovering(hostname);
     };
 
+    // siteSpecificSettings
+    let editingSiteHostname = null;
+
+    function populateSiteSpecificLangOptions() {
+      const select = $("#siteSpecificTargetLang");
+      if (select.options.length > 1) return;
+      const langs = twpLang.getLanguageList();
+      for (const code of langs) {
+        const name = twpLang.codeToLanguage(code);
+        if (name) {
+          const opt = document.createElement("option");
+          opt.value = code;
+          opt.textContent = name;
+          select.appendChild(opt);
+        }
+      }
+    }
+
+    function populateSiteSpecificServiceOptions() {
+      const select = $("#siteSpecificService");
+      if (select.options.length > 1) return;
+      const services = twpConfig.get("enabledServices");
+      for (const svc of services) {
+        const opt = document.createElement("option");
+        opt.value = svc;
+        opt.textContent = svc.charAt(0).toUpperCase() + svc.slice(1);
+        select.appendChild(opt);
+      }
+    }
+
+    function dictObjectToText(dictObj) {
+      if (!dictObj) return "";
+      return Object.entries(dictObj)
+        .map(([k, v]) => v ? `${k}=${v}` : k)
+        .join("\n");
+    }
+
+    function textToDictObject(text) {
+      if (!text.trim()) return null;
+      const obj = {};
+      for (const line of text.split("\n")) {
+        const trimmed = line.trim();
+        if (!trimmed) continue;
+        const eqIdx = trimmed.indexOf("=");
+        if (eqIdx > 0) {
+          obj[trimmed.slice(0, eqIdx).trim()] = trimmed.slice(eqIdx + 1).trim();
+        } else {
+          obj[trimmed] = "";
+        }
+      }
+      return Object.keys(obj).length > 0 ? obj : null;
+    }
+
+    function showSiteSpecificEditPanel(hostname) {
+      editingSiteHostname = hostname;
+      populateSiteSpecificLangOptions();
+      populateSiteSpecificServiceOptions();
+
+      const config = twpConfig.getSiteSpecificConfig(hostname) || {};
+      $("#siteSpecificEditTitle").textContent = hostname;
+      $("#siteSpecificTargetLang").value = config.targetLanguage || "";
+      $("#siteSpecificService").value = config.pageTranslatorService || "";
+      $("#siteSpecificDict").value = dictObjectToText(config.customDictionary);
+      $("#siteSpecificEditPanel").style.display = "block";
+    }
+
+    function hideSiteSpecificEditPanel() {
+      editingSiteHostname = null;
+      $("#siteSpecificEditPanel").style.display = "none";
+    }
+
+    function createSiteSpecificSummary(siteConfig) {
+      const parts = [];
+      if (siteConfig.targetLanguage) {
+        const name = twpLang.codeToLanguage(siteConfig.targetLanguage);
+        parts.push(name || siteConfig.targetLanguage);
+      }
+      if (siteConfig.pageTranslatorService) {
+        parts.push(siteConfig.pageTranslatorService.charAt(0).toUpperCase() + siteConfig.pageTranslatorService.slice(1));
+      }
+      if (siteConfig.customDictionary) {
+        const count = Object.keys(siteConfig.customDictionary).length;
+        if (count > 0) parts.push(`Dict: ${count}`);
+      }
+      return parts.join(" | ");
+    }
+
+    function createNodeToSiteSpecificList(hostname, siteConfig) {
+      const li = document.createElement("li");
+      li.setAttribute("class", "w3-display-container");
+      li.style.paddingRight = "90px";
+
+      const hostnameSpan = document.createElement("span");
+      hostnameSpan.textContent = hostname;
+      hostnameSpan.style.fontWeight = "bold";
+      li.appendChild(hostnameSpan);
+
+      const summary = createSiteSpecificSummary(siteConfig);
+      if (summary) {
+        const br = document.createElement("br");
+        li.appendChild(br);
+        const summarySpan = document.createElement("span");
+        summarySpan.textContent = summary;
+        summarySpan.style.fontSize = "0.85em";
+        summarySpan.style.color = "#666";
+        li.appendChild(summarySpan);
+      }
+
+      const btnContainer = document.createElement("span");
+      btnContainer.setAttribute("class", "w3-display-right");
+
+      const edit = document.createElement("span");
+      edit.setAttribute("class", "w3-button w3-transparent");
+      edit.innerHTML = "&#9998;";
+      edit.onclick = (e) => {
+        e.preventDefault();
+        showSiteSpecificEditPanel(hostname);
+      };
+      btnContainer.appendChild(edit);
+
+      const close = document.createElement("span");
+      close.setAttribute("class", "w3-button w3-transparent");
+      close.innerHTML = "&times;";
+      close.onclick = (e) => {
+        e.preventDefault();
+        twpConfig.removeSiteSpecificConfig(hostname);
+        li.remove();
+        if (editingSiteHostname === hostname) hideSiteSpecificEditPanel();
+      };
+      btnContainer.appendChild(close);
+
+      li.appendChild(btnContainer);
+      return li;
+    }
+
+    const siteSpecificSettings = twpConfig.get("siteSpecificSettings");
+    const sortedSiteKeys = [...siteSpecificSettings.keys()].sort((a, b) => a.localeCompare(b));
+    sortedSiteKeys.forEach((hostname) => {
+      const li = createNodeToSiteSpecificList(hostname, siteSpecificSettings.get(hostname));
+      $("#siteSpecificSettings").appendChild(li);
+    });
+
+    $("#addSiteSpecificSetting").onclick = (e) => {
+      const hostname = prompt("Enter the site hostname (e.g. github.com or *.example.com)", "www.site.com");
+      if (!hostname) return;
+      showSiteSpecificEditPanel(hostname.trim());
+    };
+
+    $("#siteSpecificSave").onclick = (e) => {
+      if (!editingSiteHostname) return;
+      const siteConfig = {};
+      const lang = $("#siteSpecificTargetLang").value;
+      const svc = $("#siteSpecificService").value;
+      const dict = textToDictObject($("#siteSpecificDict").value);
+      if (lang) siteConfig.targetLanguage = lang;
+      if (svc) siteConfig.pageTranslatorService = svc;
+      if (dict) siteConfig.customDictionary = dict;
+
+      twpConfig.setSiteSpecificConfig(editingSiteHostname, siteConfig);
+
+      // Refresh the list
+      const ul = $("#siteSpecificSettings");
+      ul.innerHTML = "";
+      const updated = twpConfig.get("siteSpecificSettings");
+      const keys = [...updated.keys()].sort((a, b) => a.localeCompare(b));
+      keys.forEach((h) => {
+        const li = createNodeToSiteSpecificList(h, updated.get(h));
+        ul.appendChild(li);
+      });
+      hideSiteSpecificEditPanel();
+    };
+
+    $("#siteSpecificCancel").onclick = (e) => {
+      hideSiteSpecificEditPanel();
+    };
+
     // translations options
     $("#pageTranslatorService").onchange = (e) => {
       twpConfig.set("pageTranslatorService", e.target.value);

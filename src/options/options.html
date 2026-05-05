@@ -266,6 +266,41 @@
           <div class="w3-display-container w3-padding w3-margin-top">
             <div class="w3-display-left">
               <p>
+                <b data-i18n="lblSiteSpecificSettings">Site-specific settings</b>
+              </p>
+            </div>
+            <div class="w3-display-right">
+              <button id="addSiteSpecificSetting" class="w3-button w3-blue w3-round w3-margin-right add"
+                data-i18n="lblAdd">
+                Add
+              </button>
+            </div>
+          </div>
+          <ul id="siteSpecificSettings" class="w3-ul w3-card-4 w3-margin w3-round list"></ul>
+          <div id="siteSpecificEditPanel" class="w3-card-4 w3-margin w3-round w3-padding" style="display: none;">
+            <p><b id="siteSpecificEditTitle"></b></p>
+            <label data-i18n="lblSiteSpecificTargetLanguage">Target language</label>
+            <select id="siteSpecificTargetLang" class="w3-select w3-margin-bottom">
+              <option value="" data-i18n="lblUseGlobalSetting">Use global setting</option>
+            </select>
+            <label data-i18n="lblSiteSpecificService">Translation service</label>
+            <select id="siteSpecificService" class="w3-select w3-margin-bottom">
+              <option value="" data-i18n="lblUseGlobalSetting">Use global setting</option>
+            </select>
+            <label data-i18n="lblSiteSpecificDictionary">Custom dictionary</label>
+            <textarea id="siteSpecificDict" class="w3-input w3-border w3-margin-bottom" rows="4"
+              placeholder="word=replacement (one per line)"></textarea>
+            <button id="siteSpecificSave" class="w3-button w3-blue w3-round w3-margin-right"
+              data-i18n="lblSiteSpecificSave">Save</button>
+            <button id="siteSpecificCancel" class="w3-button w3-round"
+              data-i18n="lblSiteSpecificCancel">Cancel</button>
+          </div>
+        </div>
+        <div class="desktopOnly">
+          <br />
+          <div class="w3-display-container w3-padding w3-margin-top">
+            <div class="w3-display-left">
+              <p>
                 <b data-i18n="optionsAddToCustomDictionary">Add to custom dictionary (This allows you to skip certain
                   words during web page translation)</b>
               </p>
