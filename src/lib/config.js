@@ -6,7 +6,7 @@ const twpConfig = (function () {
   const defaultTargetLanguages = ["en", "es", "de"];
   /**
    * all configName available
-   * @typedef {"uiLanguage" | "pageTranslatorService" | "textTranslatorService" | "textToSpeechService" | "enabledServices" | "ttsSpeed" | "ttsVolume" | "targetLanguage" | "targetLanguageTextTranslation" | "targetLanguages" | "alwaysTranslateSites" | "neverTranslateSites" | "sitesToTranslateWhenHovering" | "langsToTranslateWhenHovering" | "alwaysTranslateLangs" | "neverTranslateLangs" | "customDictionary" | "showTranslatePageContextMenu" | "showTranslateSelectedContextMenu" | "showButtonInTheAddressBar" | "showOriginalTextWhenHovering" | "showTranslateSelectedButton" | "whenShowMobilePopup" | "useOldPopup" | "darkMode" | "popupBlueWhenSiteIsTranslated" | "popupPanelSection" | "showReleaseNotes" | "dontShowIfIsNotValidText" | "dontShowIfPageLangIsTargetLang" | "dontShowIfPageLangIsUnknown" | "dontShowIfSelectedTextIsTargetLang" | "dontShowIfSelectedTextIsUnknown" | "hotkeys" | "expandPanelTranslateSelectedText" | "translateTag_pre" | "enableIframePageTranslation" | "dontSortResults" | "translateDynamicallyCreatedContent" | "autoTranslateWhenClickingALink" | "translateSelectedWhenPressTwice" | "translateTextOverMouseWhenPressTwice" | "translateClickingOnce" | "enableDiskCache" | "useAlternativeService" | "customServices" | "showMobilePopupOnDesktop" | "popupMobileKeepOnScren" | "popupMobilePosition" | "addPaddingToPage" | "proxyServers"} DefaultConfigNames
+   * @typedef {"uiLanguage" | "pageTranslatorService" | "textTranslatorService" | "textToSpeechService" | "enabledServices" | "ttsSpeed" | "ttsVolume" | "targetLanguage" | "targetLanguageTextTranslation" | "targetLanguages" | "alwaysTranslateSites" | "neverTranslateSites" | "sitesToTranslateWhenHovering" | "langsToTranslateWhenHovering" | "alwaysTranslateLangs" | "neverTranslateLangs" | "customDictionary" | "siteSpecificSettings" | "showTranslatePageContextMenu" | "showTranslateSelectedContextMenu" | "showButtonInTheAddressBar" | "showOriginalTextWhenHovering" | "showTranslateSelectedButton" | "whenShowMobilePopup" | "useOldPopup" | "darkMode" | "popupBlueWhenSiteIsTranslated" | "popupPanelSection" | "showReleaseNotes" | "dontShowIfIsNotValidText" | "dontShowIfPageLangIsTargetLang" | "dontShowIfPageLangIsUnknown" | "dontShowIfSelectedTextIsTargetLang" | "dontShowIfSelectedTextIsUnknown" | "hotkeys" | "expandPanelTranslateSelectedText" | "translateTag_pre" | "enableIframePageTranslation" | "dontSortResults" | "translateDynamicallyCreatedContent" | "autoTranslateWhenClickingALink" | "translateSelectedWhenPressTwice" | "translateTextOverMouseWhenPressTwice" | "translateClickingOnce" | "enableDiskCache" | "useAlternativeService" | "customServices" | "showMobilePopupOnDesktop" | "popupMobileKeepOnScren" | "popupMobilePosition" | "addPaddingToPage" | "proxyServers"} DefaultConfigNames
    */
   const defaultConfig = {
     uiLanguage: "default",
@@ -26,6 +26,7 @@ const twpConfig = (function () {
     alwaysTranslateLangs: [],
     neverTranslateLangs: [],
     customDictionary: new Map(),
+    siteSpecificSettings: new Map(),
     showTranslatePageContextMenu: "yes",
     showTranslateSelectedContextMenu: "yes",
     showButtonInTheAddressBar: "yes",
@@ -441,6 +442,39 @@ const twpConfig = (function () {
   };
   twpConfig.removeLangFromNeverTranslate = function (lang) {
     removeFromArray("neverTranslateLangs", lang);
+  };
+
+  twpConfig.getSiteSpecificConfig = function (hostname) {
+    const map = twpConfig.get("siteSpecificSettings");
+    if (map.has(hostname)) return map.get(hostname);
+    let bestMatch = null;
+    let bestLength = 0;
+    for (const [pattern, siteConfig] of map) {
+      if (pattern.startsWith("*.")) {
+        const suffix = pattern.slice(1);
+        if (hostname.endsWith(suffix) && suffix.length > bestLength) {
+          bestMatch = siteConfig;
+          bestLength = suffix.length;
+        }
+      }
+    }
+    return bestMatch;
+  };
+
+  twpConfig.setSiteSpecificConfig = function (hostname, siteConfig) {
+    const map = twpConfig.get("siteSpecificSettings");
+    if (siteConfig === null || Object.keys(siteConfig).length === 0) {
+      map.delete(hostname);
+    } else {
+      map.set(hostname, siteConfig);
+    }
+    twpConfig.set("siteSpecificSettings", map);
+  };
+
+  twpConfig.removeSiteSpecificConfig = function (hostname) {
+    const map = twpConfig.get("siteSpecificSettings");
+    map.delete(hostname);
+    twpConfig.set("siteSpecificSettings", map);
   };
 
   /**
