@@ -113,35 +113,6 @@ twpConfig
       );
     });
 
-    let isPlayingAudio = false;
-
-    function playAudio(text, targetLanguage, cbOnEnded = () => {}) {
-      isPlayingAudio = true;
-      chrome.runtime.sendMessage(
-        {
-          action: "textToSpeech",
-          text,
-          targetLanguage,
-        },
-        () => {
-          checkedLastError();
-          isPlayingAudio = false;
-          cbOnEnded();
-        }
-      );
-    }
-
-    function stopAudio() {
-      if (isPlayingAudio) {
-        chrome.runtime.sendMessage(
-          {
-            action: "stopAudio",
-          },
-          checkedLastError
-        );
-      }
-      isPlayingAudio = false;
-    }
 
     const eOrigText = document.getElementById("eOrigText");
     const eOrigTextDiv = document.getElementById("eOrigTextDiv");
@@ -153,8 +124,6 @@ twpConfig
     const sDeepL = document.getElementById("sDeepL");
     const sLibre = document.getElementById("sLibre");
     const eCopy = document.getElementById("copy");
-    const eListenOriginal = document.getElementById("listenOriginal");
-    const eListenTranslated = document.getElementById("listenTranslated");
 
     eCopy.onclick = () => {
       navigator.clipboard
@@ -270,54 +239,6 @@ twpConfig
       }
     };
 
-    function onListenClick(type, element, text, language) {
-      const msgListen = twpI18n.getMessage("btnListen");
-      const msgStopListening = twpI18n.getMessage("btnStopListening");
-
-      eListenOriginal.classList.remove("selected");
-      eListenTranslated.classList.remove("selected");
-      eListenOriginal.setAttribute("title", msgStopListening);
-      eListenTranslated.setAttribute("title", msgStopListening);
-
-      if (isPlayingAudio) {
-        stopAudio();
-        element.classList.remove("selected");
-      } else {
-        playAudio(text, language, () => {
-          element.classList.remove("selected");
-          element.setAttribute("title", msgListen);
-        });
-        element.classList.add("selected");
-      }
-    }
-
-    let lastListenAudioType = null;
-    eListenOriginal.onclick = async () => {
-      let { lang, isReliable } = await detectTextLanguage(
-        eOrigText.textContent
-      );
-      if (!isReliable && originalTabLanguage !== "und") {
-        lang = originalTabLanguage;
-      }
-      if (lastListenAudioType !== "original") {
-        stopAudio();
-      }
-      lastListenAudioType = "original";
-      onListenClick("original", eListenOriginal, eOrigText.textContent, lang);
-    };
-
-    eListenTranslated.onclick = () => {
-      if (lastListenAudioType !== "translated") {
-        stopAudio();
-      }
-      lastListenAudioType = "translated";
-      onListenClick(
-        "translated",
-        eListenTranslated,
-        eTextTranslated.textContent,
-        currentTargetLanguage
-      );
-    };
 
     const targetLanguageButtons = document.querySelectorAll(
       "#setTargetLanguage li"
@@ -420,7 +341,6 @@ twpConfig
     });
 
     function translateText() {
-      stopAudio();
 
       backgroundTranslateSingleText(
         currentTextTranslatorService,

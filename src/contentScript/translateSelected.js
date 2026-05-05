@@ -82,35 +82,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
     });
   }
 
-  let isPlayingAudio = false;
-
-  function playAudio(text, targetLanguage, cbOnEnded = () => {}) {
-    isPlayingAudio = true;
-    chrome.runtime.sendMessage(
-      {
-        action: "textToSpeech",
-        text,
-        targetLanguage,
-      },
-      () => {
-        checkedLastError();
-
-        isPlayingAudio = false;
-        cbOnEnded();
-      }
-    );
-  }
-
-  function stopAudio() {
-    if (!isPlayingAudio) return;
-    isPlayingAudio = false;
-    chrome.runtime.sendMessage(
-      {
-        action: "stopAudio",
-      },
-      checkedLastError
-    );
-  }
 
   function dragElement(elmnt, elmnt2) {
     var pos1 = 0,
@@ -399,8 +370,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
     const sLibre = shadowRoot.getElementById("sLibre");
     const eCopy = shadowRoot.getElementById("copy");
     const eReplace = shadowRoot.getElementById("replace");
-    const eListenOriginal = shadowRoot.getElementById("listenOriginal");
-    const eListenTranslated = shadowRoot.getElementById("listenTranslated");
 
     if (
       gSelectionInfo &&
@@ -589,54 +558,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
       }
     };
 
-    function onListenClick(type, element, text, language) {
-      const msgListen = twpI18n.getMessage("btnListen");
-      const msgStopListening = twpI18n.getMessage("btnStopListening");
-
-      eListenOriginal.classList.remove("selected");
-      eListenTranslated.classList.remove("selected");
-      eListenOriginal.setAttribute("title", msgStopListening);
-      eListenTranslated.setAttribute("title", msgStopListening);
-
-      if (isPlayingAudio) {
-        stopAudio();
-        element.classList.remove("selected");
-      } else {
-        playAudio(text, language, () => {
-          element.classList.remove("selected");
-          element.setAttribute("title", msgListen);
-        });
-        element.classList.add("selected");
-      }
-    }
-
-    let lastListenAudioType = null;
-    eListenOriginal.onclick = async () => {
-      let { lang, isReliable } = await detectTextLanguage(
-        eOrigText.textContent
-      );
-      if (!isReliable && originalTabLanguage !== "und") {
-        lang = originalTabLanguage;
-      }
-      if (lastListenAudioType !== "original") {
-        stopAudio();
-      }
-      lastListenAudioType = "original";
-      onListenClick("original", eListenOriginal, eOrigText.textContent, lang);
-    };
-
-    eListenTranslated.onclick = () => {
-      if (lastListenAudioType !== "translated") {
-        stopAudio();
-      }
-      lastListenAudioType = "translated";
-      onListenClick(
-        "translated",
-        eListenTranslated,
-        eSelTextTrans.textContent,
-        currentTargetLanguage
-      );
-    };
 
     document.body.appendChild(divElement);
 
@@ -786,7 +707,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
   function destroy() {
     window.isTranslatingSelected = false;
     fooCount++;
-    stopAudio();
     if (!divElement) return;
 
     eButtonTransSelText.removeEventListener("click", onClick);
@@ -918,7 +838,6 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
   function translateNewInput() {
     fooCount++;
     const currentFooCount = fooCount;
-    stopAudio();
 
     backgroundTranslateSingleText(
       currentTextTranslatorService,
