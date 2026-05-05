@@ -823,24 +823,6 @@ twpConfig
     };
     $("#textTranslatorService").value = twpConfig.get("textTranslatorService");
 
-    $("#textToSpeechService").onchange = (e) => {
-      twpConfig.set("textToSpeechService", e.target.value);
-    };
-    $("#textToSpeechService").value = twpConfig.get("textToSpeechService");
-
-    $("#ttsSpeed").oninput = (e) => {
-      twpConfig.set("ttsSpeed", e.target.value);
-      $("#displayTtsSpeed").textContent = e.target.value;
-    };
-    $("#ttsSpeed").value = twpConfig.get("ttsSpeed");
-    $("#displayTtsSpeed").textContent = twpConfig.get("ttsSpeed");
-
-    $("#ttsVolume").oninput = (e) => {
-      twpConfig.set("ttsVolume", e.target.value);
-      $("#displayTtsVolume").textContent = e.target.value;
-    };
-    $("#ttsVolume").value = twpConfig.get("ttsVolume");
-    $("#displayTtsVolume").textContent = twpConfig.get("ttsVolume");
 
     $("#showOriginalTextWhenHovering").onchange = (e) => {
       twpConfig.set("showOriginalTextWhenHovering", e.target.value);
@@ -1663,24 +1645,18 @@ twpConfig
         const inputTranslationServer = $(
           "#googleTranslateProxyServer"
         ).value.trim();
-        const inputTtsServer = $("#googleTtsProxyServer").value.trim();
         const translateServer = inputTranslationServer
           ? new URL("https://" + inputTranslationServer).host
-          : null;
-        const ttsServer = inputTtsServer
-          ? new URL("https://" + inputTtsServer).host
           : null;
 
         const proxyServers = twpConfig.get("proxyServers");
         proxyServers.google = {
           translateServer,
-          ttsServer,
         };
         console.info("proxyServers: ", proxyServers);
         twpConfig.set("proxyServers", proxyServers);
 
         $("#googleTranslateProxyServer").value = translateServer;
-        $("#googleTtsProxyServer").value = ttsServer;
       } catch (e) {
         alert(e);
       }
@@ -1692,13 +1668,11 @@ twpConfig
       twpConfig.set("proxyServers", proxyServers);
 
       $("#googleTranslateProxyServer").value = "";
-      $("#googleTtsProxyServer").value = "";
     }
 
     const googleProxy = twpConfig.get("proxyServers").google;
     if (googleProxy) {
       $("#googleTranslateProxyServer").value = googleProxy.translateServer;
-      $("#googleTtsProxyServer").value = googleProxy.ttsServer;
     }
 
     // donation options

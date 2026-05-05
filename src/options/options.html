@@ -337,23 +337,7 @@
             <option value="deepl">DeepL</option>
           </select>
           <br />
-          <p>
-            <b data-i18n="lblTextToSpeechService">Text-to-speech service</b>
-          </p>
-          <select id="textToSpeechService" class="w3-select w3-margin">
-            <option value="google">Google</option>
-            <option value="bing">Bing</option>
-          </select>
-          <br />
         </div>
-        <p><b data-i18n="lblTtsSpeed">Text-to-speech audio speed</b></p>
-        <input id="ttsSpeed" type="range" min="0.25" max="2.0" step="0.25" value="1.0" />
-        <output id="displayTtsSpeed">1.0</output>
-        <br />
-        <p><b data-i18n="lblTtsVolume">Text-to-speech audio volume</b></p>
-        <input id="ttsVolume" type="range" min="0.1" max="2.0" step="0.1" value="1.0" />
-        <output id="displayTtsVolume">1.0</output>
-        <br />
         <p>
           <b data-i18n="lblShowTranslateSelectedButton">Show the button to translate the selected text</b>
         </p>
@@ -658,10 +642,6 @@
             <label for="googleTranslateProxyServer">Translation Server</label><br>
             <input type="text" id="googleTranslateProxyServer" placeholder="translate.googleapis.com"
               style="width: 50%;" autocomplete="off" spellcheck="false"><br>
-            <br>
-            <label for="googleTtsProxyServer">Text-to-speech server</label><br>
-            <input type="text" id="googleTtsProxyServer" placeholder="translate.google.com" style="width: 50%;"
-              autocomplete="off" spellcheck="false"><br>
             <br>
             <button id="addGoogleProxy">Set Google Proxy</button>
             <button id="removeGoogleProxy">Remove Google Proxy</button>
