@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.1] - 2026-05-12
+
+### Fixed
+- Replace Ctrl+Alt keyboard shortcuts with Alt+Shift for Chrome compatibility
+
 ## [1.0.0] - 2026-05-12
 
 ### Added
