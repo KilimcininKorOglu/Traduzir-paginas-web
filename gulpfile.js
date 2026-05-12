@@ -14,9 +14,9 @@ const version = JSON.parse(
   fs.readFileSync("src/manifest.json", "utf8")
 ).version;
 
-const chromium_folder_name = `TWP_${version}_Chromium`;
-const firefox_folder_name = `TWP_${version}_Firefox`;
-const firefox_selfhosted_folder_name = `TWP_${version}_Firefox_selfhosted`;
+const chromium_folder_name = `InPlacely_${version}_Chromium`;
+const firefox_folder_name = `InPlacely_${version}_Firefox`;
+const firefox_selfhosted_folder_name = `InPlacely_${version}_Firefox_selfhosted`;
 
 const mappath = `../maps/${version}`;
 const mapconfig = remoteSourceMaps
@@ -157,14 +157,14 @@ gulp.task("firefox-self-hosted", (cb) => {
 gulp.task("firefox-zip", () => {
   return gulp
     .src([`build/${firefox_folder_name}/**/*`], {encoding: false})
-    .pipe(zip(`TWP_${version}_Firefox.zip`))
+    .pipe(zip(`InPlacely_${version}_Firefox.zip`))
     .pipe(gulp.dest("build"));
 });
 
 gulp.task("firefox-self-hosted-zip", () => {
   return gulp
     .src([`build/${firefox_selfhosted_folder_name}/**/*`], {encoding: false})
-    .pipe(zip(`TWP_${version}_Firefox_selfhosted.zip`))
+    .pipe(zip(`InPlacely_${version}_Firefox_selfhosted.zip`))
     .pipe(gulp.dest("build"));
 });
 

@@ -1,6 +1,6 @@
-# Translate Web Pages (TWP)
+# InPlacely
 
-A Manifest V3 browser extension that translates web pages in real time using Google Translate.
+A Manifest V3 browser extension that translates web pages in-place using Google Translate.
 
 Supports Chrome 102+, Firefox 128+, Edge, and Brave.
 
@@ -14,8 +14,8 @@ Android users:
 1. Install Firefox v120+ from Google Play.
 2. Open the extension manager.
 3. Scroll down and tap **Find more add-ons**.
-4. Search for **TWP** on the add-ons website.
-5. Install **TWP - Translate For Mobile**.
+4. Search for **InPlacely** on the add-ons website.
+5. Install **InPlacely**.
 
 ### Chrome, Edge, and Brave
 

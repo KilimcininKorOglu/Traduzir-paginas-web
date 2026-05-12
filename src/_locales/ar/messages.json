@@ -466,7 +466,7 @@
     "placeholders": {
       "EXTENSION_NAME": {
         "content": "#EXTENSION_NAME#",
-        "example": "TWP - Translate Web Pages"
+        "example": "InPlacely"
       },
       "EXTENSION_VERSION": {
         "content": "#EXTENSION_VERSION#",
@@ -479,7 +479,7 @@
     "placeholders": {
       "EXTENSION_NAME": {
         "content": "#EXTENSION_NAME#",
-        "example": "TWP - Translate Web Pages"
+        "example": "InPlacely"
       }
     }
   },
