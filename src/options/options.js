@@ -90,11 +90,6 @@ twpConfig
       document.head.appendChild(style);
     }
 
-    if (!chrome.pageAction) {
-      let style = document.createElement("style");
-      style.textContent = ".firefox-only {display: none !important}";
-      document.head.appendChild(style);
-    }
 
     let sideBarIsVisible = false;
     $("#btnOpenMenu").onclick = (e) => {
