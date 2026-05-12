@@ -64,7 +64,7 @@ var $ = document.querySelector.bind(document);
 twpConfig
   .onReady()
   .then(() => {
-    // https://github.com/KilimcininKorOglu/InPlacely/issues/774
+    // https://github.com/FilipePS/Traduzir-paginas-web/issues/774
     if (sessionStorage !== null) {
       return twpI18n.updateUiMessages(
         sessionStorage.getItem("temporaryUiLanguage")

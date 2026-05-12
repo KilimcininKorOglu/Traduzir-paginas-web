@@ -64,7 +64,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     tabsCreate(chrome.runtime.getURL("/options/options.html#donation"));
   } else if (request.action === "detectTabLanguage") {
     if (!sender.tab) {
-      // https://github.com/KilimcininKorOglu/InPlacely/issues/478
+      // https://github.com/FilipePS/Traduzir-paginas-web/issues/478
       sendResponse("und");
       return;
     }
