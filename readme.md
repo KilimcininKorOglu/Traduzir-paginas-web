@@ -71,10 +71,6 @@ Full policy: [Privacy Policy](https://addons.mozilla.org/addon/traduzir-paginas-
 
 To help translate the extension interface, use [Crowdin](https://crowdin.com/project/translate-web-pages).
 
-## Donations
-
-Support the developer on [Patreon](https://www.patreon.com/filipeps).
-
 ## FAQ
 
 **Why does the extension need access to all websites?**
