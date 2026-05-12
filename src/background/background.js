@@ -1,7 +1,6 @@
 "use strict";
 
 // get mimetype
-var tabToMimeType = {};
 chrome.webRequest.onHeadersReceived.addListener(
   function (details) {
     if (details.tabId !== -1) {
@@ -12,8 +11,9 @@ chrome.webRequest.onHeadersReceived.addListener(
           break;
         }
       }
-      tabToMimeType[details.tabId] =
+      const mimeType =
         contentTypeHeader && contentTypeHeader.value.split(";", 1)[0];
+      chrome.storage.session.set({ ["mime_" + details.tabId]: mimeType });
     }
   },
   {
@@ -101,9 +101,13 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     );
   } else if (request.action === "getTabMimeType") {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-      sendResponse(tabToMimeType[tabs[0].id]);
+      chrome.storage.session.get("mime_" + tabs[0].id).then((r) => {
+        sendResponse(r["mime_" + tabs[0].id]);
+      });
     });
     return true;
+  } else if (request.action === "isIncognito") {
+    sendResponse({ incognito: sender.tab ? sender.tab.incognito : false });
   } else if (request.action === "restorePagesWithServiceNames") {
     chrome.tabs.query({}, (tabs) => {
       tabs.forEach((tab) => {
@@ -341,7 +345,6 @@ if (typeof chrome.contextMenus !== "undefined") {
   };
   updateActionContextMenu();
 
-  const tabHasContentScript = {};
   let currentTabId = null;
   chrome.tabs.onActivated.addListener((activeInfo) => {
     currentTabId = activeInfo.tabId;
@@ -386,16 +389,18 @@ if (typeof chrome.contextMenus !== "undefined") {
     } else if (info.menuItemId == "more-options") {
       tabsCreate(chrome.runtime.getURL("/options/options.html"));
     } else if (info.menuItemId == "action-translate-pdf") {
-      const mimeType = tabToMimeType[tab.id];
-      if (
-        mimeType &&
-        mimeType.toLowerCase() === "application/pdf" &&
-        typeof chrome.action.openPopup !== "undefined"
-      ) {
-        chrome.action.openPopup();
-      } else {
-        tabsCreate("https://pdf.translatewebpages.org/");
-      }
+      chrome.storage.session.get("mime_" + tab.id).then((r) => {
+        const mimeType = r["mime_" + tab.id];
+        if (
+          mimeType &&
+          mimeType.toLowerCase() === "application/pdf" &&
+          typeof chrome.action.openPopup !== "undefined"
+        ) {
+          chrome.action.openPopup();
+        } else {
+          tabsCreate("https://pdf.translatewebpages.org/");
+        }
+      });
     }
   });
 
@@ -435,14 +440,14 @@ if (typeof chrome.contextMenus !== "undefined") {
         },
         (response) => {
           checkedLastError();
-          tabHasContentScript[tabId] = !!response;
+          chrome.storage.session.set({ ["cs_" + tabId]: !!response });
         }
       );
     }
   });
 
   chrome.tabs.onRemoved.addListener((tabId, removeInfo) => {
-    delete tabHasContentScript[tabId];
+    chrome.storage.session.remove("cs_" + tabId);
   });
 
   chrome.tabs.query({}, (tabs) =>
@@ -458,7 +463,7 @@ if (typeof chrome.contextMenus !== "undefined") {
         (response) => {
           checkedLastError();
           if (response) {
-            tabHasContentScript[tab.id] = true;
+            chrome.storage.session.set({ ["cs_" + tab.id]: true });
           }
         }
       )
@@ -1051,15 +1056,6 @@ twpConfig.onReady(async () => {
 // garante que a extensão só seja atualizada quando reiniciar o navegador.
 // caso seja uma atualização manual, realiza uma limpeza e recarrega a extensão para instalar a atualização.
 chrome.runtime.onUpdateAvailable.addListener((details) => {
-  var reloaded = false;
-
-  setTimeout(function () {
-    if (!reloaded) {
-      reloaded = true;
-      chrome.runtime.reload();
-    }
-  }, 2200);
-
   chrome.tabs.query({}, (tabs) => {
     const cleanUpsPromises = [];
     tabs.forEach((tab) => {
@@ -1070,10 +1066,7 @@ chrome.runtime.onUpdateAvailable.addListener((details) => {
       );
     });
     Promise.all(cleanUpsPromises).finally(() => {
-      if (!reloaded) {
-        reloaded = true;
-        chrome.runtime.reload();
-      }
+      chrome.runtime.reload();
     });
   });
 
