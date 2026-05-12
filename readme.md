@@ -65,7 +65,7 @@ Load the extension directly from `src/` without building:
 
 We do not collect any information. To translate, the contents of web pages are sent to Google servers.
 
-Full policy: [Privacy Policy](https://addons.mozilla.org/addon/traduzir-paginas-web/privacy/)
+Full policy: [Privacy Policy](PRIVACY)
 
 ## Contribute
 
