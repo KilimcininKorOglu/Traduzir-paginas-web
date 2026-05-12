@@ -50,3 +50,18 @@ jobs:
             build/*.zip
             build/*.xpi
             build/*.crx
+
+      - name: Update self-hosted update files
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          git fetch origin master
+          git checkout master
+          sed -i "s|/v[0-9][0-9.]*[0-9]/InPlacely_[0-9][0-9.]*[0-9]_Chromium\.crx|/v${VERSION}/InPlacely_${VERSION}_Chromium.crx|g" updates.xml dist/chromium/updates.xml
+          sed -i "s|version='[0-9][0-9.]*[0-9]'|version='${VERSION}'|g" updates.xml dist/chromium/updates.xml
+          sed -i "s|/v[0-9][0-9.]*[0-9]/InPlacely_[0-9][0-9.]*[0-9]_Firefox\.xpi|/v${VERSION}/InPlacely_${VERSION}_Firefox.xpi|g" dist/firefox/updates.json
+          sed -i "s|\"version\": \"[0-9][0-9.]*[0-9]\"|\"version\": \"${VERSION}\"|g" dist/firefox/updates.json
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add updates.xml dist/chromium/updates.xml dist/firefox/updates.json
+          git diff --staged --quiet || (git commit -m "chore: update dist files for v${VERSION}" && git push)
