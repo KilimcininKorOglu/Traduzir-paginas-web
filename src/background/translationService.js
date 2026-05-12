@@ -561,7 +561,7 @@ const translationService = (function () {
     }
 
     /**
-     * https://github.com/FilipePS/Traduzir-paginas-web/issues/484
+     * https://github.com/KilimcininKorOglu/InPlacely/issues/484
      * @param {string} str
      * @returns {string} fixedStr
      */
@@ -662,7 +662,7 @@ const translationService = (function () {
           // maybe the same index appears several times
           // maybe some text will be outside of <a i={number}> (Usually text before the first <a> tag, and some whitespace between the <a> tags),
           // in this case, The outside text will be placed inside the <a i={number}> closer
-          // https://github.com/FilipePS/Traduzir-paginas-web/issues/449
+          // https://github.com/KilimcininKorOglu/InPlacely/issues/449
           //TODO: lidar com tags dentro de tags e tags vazias
           // https://de.wikipedia.org/wiki/Wikipedia:Hauptseite
           // "{\"originalText\":\"<pre><a i=0>\\nFür den </a><a i=1>37. Schreib­wettbewerb</a><a i=2> und den </a><a i=3>18. Miniaturwettbewerb</a><a i=4> können ab sofort Artikel nominiert werden.</a></pre>\",\"translatedText\":\"<pre><a i=0>\\n</a>Artigos já podem ser indicados <a i=0>para o</a> <a i=1>37º Concurso de Redação <a i=2>e</a></a> <a i=3><a i=4>18º</a> Concurso de Miniaturas</a> .</pre>\",\"detectedLanguage\":\"de\",\"status\":\"complete\",\"waitTranlate\":{}}"
@@ -726,7 +726,7 @@ const translationService = (function () {
           if (dontSortResults) {
             // Should not sort the <a i={number}> of Google Translate result
             // Instead of it, join the texts without sorting
-            // https://github.com/FilipePS/Traduzir-paginas-web/issues/163
+            // https://github.com/KilimcininKorOglu/InPlacely/issues/163
 
             // /** @type {string[]} */
             // const finalResulArray = [];

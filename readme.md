@@ -20,7 +20,7 @@ Android users:
 ### Chrome, Edge, and Brave
 
 Load the extension manually:
-1. Download the latest release ZIP from the [Releases](https://github.com/FilipePS/Traduzir-paginas-web/releases) page.
+1. Download the latest release ZIP from the [Releases](https://github.com/KilimcininKorOglu/InPlacely/releases) page.
 2. Extract the ZIP.
 3. Go to `chrome://extensions`, enable **Developer mode**.
 4. Click **Load unpacked** and select the extracted folder.

@@ -64,7 +64,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     tabsCreate(chrome.runtime.getURL("/options/options.html#donation"));
   } else if (request.action === "detectTabLanguage") {
     if (!sender.tab) {
-      // https://github.com/FilipePS/Traduzir-paginas-web/issues/478
+      // https://github.com/KilimcininKorOglu/InPlacely/issues/478
       sendResponse("und");
       return;
     }
@@ -1074,7 +1074,7 @@ chrome.runtime.onUpdateAvailable.addListener((details) => {
   //   const url = new URL(tabs[0].url);
   //   if (
   //     (url.hostname === "github.com" &&
-  //       url.pathname.includes("FilipePS/Traduzir-paginas-web/releases")) ||
+  //       url.pathname.includes("KilimcininKorOglu/InPlacely/releases")) ||
   //     (url.hostname === "addons.mozilla.org" &&
   //       url.pathname.includes("addon/traduzir-paginas-web/versions"))
   //   ) {
