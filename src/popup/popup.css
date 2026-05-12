@@ -232,19 +232,6 @@ hr {
   top: 3px;
 }
 
-#btnPatreon {
-  margin-top: 6px;
-  border-radius: 50%;
-  padding: 10px;
-  cursor: pointer;
-}
-
-#btnPatreon:hover i,
-#btnPatreon:hover i::after,
-#btnPatreon:hover i::before {
-  background-color: tomato;
-}
-
 #btnImproveTranslation {
   width: 100%;
   cursor: pointer;
