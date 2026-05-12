@@ -194,39 +194,34 @@ const translationService = (function () {
             ])
           );
 
-          const http = new XMLHttpRequest();
-          http.open(
-            "GET",
+          fetch(
             "https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_US.YusFYy3P_ro.O/am=AAg/d=1/exm=el_conf/ed=1/rs=AN8SPfq1Hb8iJRleQqQc8zhdzXmF9E56eQ/m=el_main"
-          );
-          http.send();
-          http.onload = (e) => {
-            if (http.responseText && http.responseText.length > 1) {
-              const result = http.responseText.match(
-                /['"]x\-goog\-api\-key['"]\s*\:\s*['"](\w{39})['"]/i
-              );
-              console.log(result);
-              if (result && result.length === 2) {
-                GoogleHelper_v2.#translateAuth = result[1];
-                GoogleHelper_v2.#AuthNotFound = false;
+          )
+            .then((r) => r.text())
+            .then((text) => {
+              if (text && text.length > 1) {
+                const result = text.match(
+                  /['"]x\-goog\-api\-key['"]\s*\:\s*['"](\w{39})['"]/i
+                );
+                console.log(result);
+                if (result && result.length === 2) {
+                  GoogleHelper_v2.#translateAuth = result[1];
+                  GoogleHelper_v2.#AuthNotFound = false;
+                } else {
+                  GoogleHelper_v2.#AuthNotFound = true;
+                  GoogleHelper_v2.#translateAuth = alternativeKey;
+                }
               } else {
                 GoogleHelper_v2.#AuthNotFound = true;
                 GoogleHelper_v2.#translateAuth = alternativeKey;
               }
-            } else {
-              GoogleHelper_v2.#AuthNotFound = true;
+              resolve();
+            })
+            .catch((e) => {
+              console.error(e);
               GoogleHelper_v2.#translateAuth = alternativeKey;
-            }
-            resolve();
-          };
-          http.onerror =
-            http.onabort =
-            http.ontimeout =
-              (e) => {
-                console.error(e);
-                GoogleHelper_v2.#translateAuth = alternativeKey;
-                resolve();
-              };
+              resolve();
+            });
         } else {
           resolve();
         }
@@ -334,7 +329,7 @@ const translationService = (function () {
        * @type {Map<string, TranslationInfo>}
        *
        * It works as an in-memory translation cache.
-       * Ensures that two identical requests share the same `XMLHttpRequest`.
+       * Ensures that two identical requests share the same `fetch` request.
        * */
       this.translationsInProgress = new Map();
     }
@@ -447,54 +442,49 @@ const translationService = (function () {
     }
 
     /**
-     * Makes a request using the *XMLHttpRequest* API. Returns a promise that will be resolved with the result of the request. If the request fails, the promise will be rejected.
+     * Makes a request using the *fetch* API. Returns a promise that will be resolved with the result of the request. If the request fails, the promise will be rejected.
      * @param {string} sourceLanguage
      * @param {string} targetLanguage
      * @param {Array<TranslationInfo>} requests
      * @returns {Promise<*>}
      */
     async makeRequest(sourceLanguage, targetLanguage, requests) {
-      return await new Promise((resolve, reject) => {
-        const xhr = new XMLHttpRequest();
-        xhr.open(
-          this.xhrMethod,
-          this.baseURL +
-            (this.cbGetExtraParameters
-              ? this.cbGetExtraParameters(
-                  sourceLanguage,
-                  targetLanguage,
-                  requests
-                )
-              : "")
-        );
+      const url =
+        this.baseURL +
+        (this.cbGetExtraParameters
+          ? this.cbGetExtraParameters(sourceLanguage, targetLanguage, requests)
+          : "");
 
-        if (this.cbGetExtraHeaders) {
-          const headers = this.cbGetExtraHeaders();
-          headers.forEach((header) => {
-            xhr.setRequestHeader(header.name, header.value);
-          });
-        }
+      const headersObj = {};
+      if (this.cbGetExtraHeaders) {
+        const headers = this.cbGetExtraHeaders();
+        headers.forEach((header) => {
+          headersObj[header.name] = header.value;
+        });
+      }
 
-        xhr.responseType = "json";
+      const body = this.cbGetRequestBody
+        ? this.cbGetRequestBody(sourceLanguage, targetLanguage, requests)
+        : undefined;
 
-        xhr.onload = (event) => {
-          resolve(xhr.response);
-        };
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 120000);
 
-        xhr.onerror =
-          xhr.onabort =
-          xhr.ontimeout =
-            (event) => {
-              console.error(event);
-              reject();
-            };
-
-        xhr.send(
-          this.cbGetRequestBody
-            ? this.cbGetRequestBody(sourceLanguage, targetLanguage, requests)
-            : undefined
-        );
-      });
+      try {
+        const response = await fetch(url, {
+          method: this.xhrMethod,
+          headers: headersObj,
+          body,
+          signal: controller.signal,
+        });
+        clearTimeout(timeoutId);
+        const data = await response.json();
+        return data;
+      } catch (e) {
+        clearTimeout(timeoutId);
+        console.error(e);
+        throw e;
+      }
     }
 
     /**
