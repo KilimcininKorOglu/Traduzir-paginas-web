@@ -1,68 +1,90 @@
+# Translate Web Pages (TWP)
 
-# <img src="https://github.com/FilipePS/Traduzir-paginas-web/blob/master/src/icons/icon-128.png" height="50"> Translate Web Pages
+A Manifest V3 browser extension that translates web pages in real time using Google Translate.
 
-Translate your page in real time using Google, Bing or Yandex.
-
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/FilipePS/Traduzir-paginas-web?label=latest%20version&sort=semver)](https://github.com/FilipePS/Traduzir-paginas-web/releases)
-[![GitHub release date](https://img.shields.io/github/release-date/FilipePS/Traduzir-paginas-web?labely)](https://github.com/FilipePS/Traduzir-paginas-web/latest)
-[![GitHub issues](https://img.shields.io/github/issues/FilipePS/Traduzir-paginas-web?color=red)](https://github.com/FilipePS/Traduzir-paginas-web/issues)
-[![GitHub license](https://img.shields.io/github/license/FilipePS/Traduzir-paginas-web?color=lightgrey)](https://github.com/FilipePS/Traduzir-paginas-web/blob/master/LICENSE)
+Supports Chrome 102+, Firefox 128+, Edge, and Brave.
 
 ## Install
 
 ### Firefox
-- Desktop users, download from [Mozilla Addons](https://addons.mozilla.org/firefox/addon/traduzir-paginas-web/).
-- Android users
-  1. Install the latest version of _Firefox (v120+)_.
-  2. Open the extension manager.
-  3. Scroll down and click **Find more add-ons**.
-  4. On the add-ons website, search for **TWP**.
-  5. Install the **TWP - Translate For Mobile** extension.
 
-### Chrome, Edge and Brave
-- The extension will be officially released for these browsers in the future.
-- If you installed the extension in these browsers previously through a registry modification, please undo those changes.\
-Note: If you want to undo registry changes, download and run this [twp-registry-uninstall-self.reg](https://raw.githubusercontent.com/FilipePS/Traduzir-paginas-web/master/dist/chromium/twp-registry-uninstall-self.reg). If you want a deeper removal download and run this other file [twp-registry-uninstall-all.reg](https://raw.githubusercontent.com/FilipePS/Traduzir-paginas-web/master/dist/chromium/twp-registry-uninstall-all.reg)
+Desktop users can download from [Mozilla Addons](https://addons.mozilla.org/firefox/addon/traduzir-paginas-web/).
+
+Android users:
+1. Install Firefox v120+ from Google Play.
+2. Open the extension manager.
+3. Scroll down and tap **Find more add-ons**.
+4. Search for **TWP** on the add-ons website.
+5. Install **TWP - Translate For Mobile**.
+
+### Chrome, Edge, and Brave
+
+Load the extension manually:
+1. Download the latest release ZIP from the [Releases](https://github.com/FilipePS/Traduzir-paginas-web/releases) page.
+2. Extract the ZIP.
+3. Go to `chrome://extensions`, enable **Developer mode**.
+4. Click **Load unpacked** and select the extracted folder.
+
+## Features
+
+- In-page translation without opening new tabs
+- Automatic translation for specified sites or languages
+- Per-site settings (target language, custom dictionary)
+- Selected text translation popup
+- Hover translation mode
+- Custom dictionary for word replacements
+- Wildcard hostname matching for site rules
+- 43 interface languages
+- Keyboard shortcuts for common actions
 
 ## Screenshots
-| Menu 1 | Menu 2 | Translated |
-| :--: | :--: | :--: |
+
+| Menu | Options | Translated |
+|:----:|:-------:|:----------:|
 | <img src="https://addons.mozilla.org/user-media/previews/full/258/258434.png" height="200"> | <img src="https://addons.mozilla.org/user-media/previews/full/258/258435.png" height="200"> | <img src="https://addons.mozilla.org/user-media/previews/full/258/258436.png" height="200"> |
+
+## Build
+
+Prerequisites: Node.js and npm.
+
+```bash
+npm install
+npm run build:local-sourcemaps   # Development build
+npm run build                    # Production build
+```
+
+Output is in the `build/` directory. See [build-instructions.md](build-instructions.md) for details.
+
+## Development
+
+Load the extension directly from `src/` without building:
+- **Chrome**: `chrome://extensions` > Developer mode > Load unpacked > select `src/`
+- **Firefox**: `about:debugging` > Load Temporary Add-on > select `src/manifest.json`
+
+## Privacy
+
+We do not collect any information. To translate, the contents of web pages are sent to Google servers.
+
+Full policy: [Privacy Policy](https://addons.mozilla.org/addon/traduzir-paginas-web/privacy/)
 
 ## Contribute
 
-- To collaborate with the translation of the extension interface use [Crowdin](https://crowdin.com/project/translate-web-pages).
+To help translate the extension interface, use [Crowdin](https://crowdin.com/project/translate-web-pages).
 
 ## Donations
 
-To make a donation use [Patreon](https://www.patreon.com/filipeps).
-
-[<img src="https://github.com/FilipePS/Traduzir-paginas-web/blob/master/src/icons/patreon.png" alt="Patreon" height="50">](https://www.patreon.com/filipeps)
+Support the developer on [Patreon](https://www.patreon.com/filipeps).
 
 ## FAQ
 
-**What can this extension do?**
+**Why does the extension need access to all websites?**
 
-Your current page is translated without having to open new tabs.
-It is possible to change the translation language.
-You can select to automatically translate.
-To change the translation engine just touch the Google Translate icon. 
+Translating a website requires reading and modifying the page text. This permission enables that.
 
-**Why do you need to access your data on all the websites you visit?**
+**Are there limitations?**
 
-To translate any website it is necessary to access and modify the text of the web pages. And the extension can only do that, with that permission.
+Some pages like `support.mozilla.org` and `addons.mozilla.org` cannot be translated. Browsers block extensions from accessing these sites for security reasons.
 
-**How are the pages translated?**
+## License
 
-The pages are translated using the Google or Yandex translation engine (you choose).
-
-**And how's my privacy?**
-
-[Privacy policy](https://addons.mozilla.org/addon/traduzir-paginas-web/privacy/): We do not collect any information. However, to translate, the contents of the web pages will be sent to Google or Yandex servers.
-
-**Limitations**
-
-Some pages like [support.mozilla.org](https://support.mozilla.org/) and [addons.mozilla.org](http://addons.mozilla.org/) will not be translated. For security reasons, the browser blocks extensions from accessing these sites.
-
-## Build instructions
-- You can see all the build instructions in the [build-instructions.md](build-instructions.md) file.
+[Mozilla Public License 2.0](LICENSE)
