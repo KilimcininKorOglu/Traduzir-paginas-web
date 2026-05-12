@@ -39,8 +39,8 @@ Load the extension manually:
 
 ## Screenshots
 
-| Menu | Options | Translated |
-|:----:|:-------:|:----------:|
+|                                            Menu                                             |                                           Options                                           |                                         Translated                                          |
+|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
 | <img src="https://addons.mozilla.org/user-media/previews/full/258/258434.png" height="200"> | <img src="https://addons.mozilla.org/user-media/previews/full/258/258435.png" height="200"> | <img src="https://addons.mozilla.org/user-media/previews/full/258/258436.png" height="200"> |
 
 ## Build
@@ -67,9 +67,6 @@ We do not collect any information. To translate, the contents of web pages are s
 
 Full policy: [Privacy Policy](PRIVACY)
 
-## Contribute
-
-To help translate the extension interface, use [Crowdin](https://crowdin.com/project/translate-web-pages).
 
 ## FAQ
 
