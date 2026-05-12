@@ -383,6 +383,12 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
   let dontSortResults =
     twpConfig.get("dontSortResults") == "yes" ? true : false;
 
+  let isIncognito = false;
+  chrome.runtime.sendMessage({ action: "isIncognito" }, (response) => {
+    if (chrome.runtime.lastError) return;
+    if (response) isIncognito = response.incognito;
+  });
+
   let fooCount = 0;
 
   let originalPageTitle;
@@ -1367,7 +1373,7 @@ Promise.all([twpConfig.onReady(), getTabHostName()]).then(function (_) {
                 if (
                   pageLanguageState === "original" &&
                   // !platformInfo.isMobile.any &&
-                  !chrome.extension.inIncognitoContext
+                  !isIncognito
                 ) {
                   if (
                     twpConfig
