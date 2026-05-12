@@ -4,8 +4,6 @@
   "main": "getLanguagesNames.js",
   "scripts": {
     "updateLanguageNames:google": "node getLanguagesNames.js --google",
-    "updateLanguageNames:bing": "node getLanguagesNames.js --bing",
-    "updateLanguageNames:yandex": "node getLanguagesNames.js --yandex",
     "updateLanguageNames:final": "node getLanguagesNames.js --final",
     "updateLanguageNames:info": "node getLanguagesNames.js --info"
   },
