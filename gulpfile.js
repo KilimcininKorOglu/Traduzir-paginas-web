@@ -32,8 +32,8 @@ const babelConfig = {
       "@babel/preset-env",
       {
         targets: {
-          firefox: "64",
-          chrome: "70",
+          firefox: "128",
+          chrome: "102",
         },
         // corejs: 3,
         // useBuiltIns: "usage",
@@ -174,18 +174,6 @@ gulp.task("chrome-copy-from-firefox", () => {
     .pipe(gulp.dest(`build/${chromium_folder_name}`));
 });
 
-gulp.task("chrome-rename", (cb) => {
-  fs.renameSync(
-    `build/${chromium_folder_name}/manifest.json`,
-    `build/${chromium_folder_name}/firefox_manifest.json`
-  );
-  fs.renameSync(
-    `build/${chromium_folder_name}/chrome_manifest.json`,
-    `build/${chromium_folder_name}/manifest.json`
-  );
-  cb();
-});
-
 gulp.task("chrome-zip", () => {
   return gulp
     .src([`build/${chromium_folder_name}/**/**`], {encoding: false})
@@ -223,7 +211,6 @@ gulp.task(
   "chrome-build",
   gulp.series(
     "chrome-copy-from-firefox",
-    "chrome-rename",
     "chrome-zip",
     "chrome-sign"
   )
