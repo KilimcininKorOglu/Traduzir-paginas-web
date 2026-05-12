@@ -15,13 +15,13 @@
   "commands": {
     "hotkey-toggle-translation": {
       "suggested_key": {
-        "default": "Ctrl+Alt+T"
+        "default": "Alt+Shift+T"
       },
       "description": "__MSG_lblSwitchTranslatedAndOriginal__"
     },
     "hotkey-translate-selected-text": {
       "suggested_key": {
-        "default": "Ctrl+Alt+S"
+        "default": "Alt+Shift+S"
       },
       "description": "__MSG_msgTranslateSelectedText__"
     },
@@ -51,7 +51,7 @@
     },
     "hotkey-hot-translate-selected-text": {
       "suggested_key": {
-        "default": "Ctrl+Alt+X"
+        "default": "Alt+Shift+X"
       },
       "description": "__MSG_lblHotTranslatedSelectedText__"
     }
