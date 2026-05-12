@@ -3,11 +3,11 @@
     "{036a55b4-5e72-4d05-a06c-cba2dfcc134a}": {
       "updates": [
         {
-          "version": "10.1.1.0",
+          "version": "1.0.0",
           "browser_specific_settings": {
             "gecko": { "strict_min_version": "128.0" }
           },
-          "update_link": "https://github.com/KilimcininKorOglu/InPlacely/releases/download/v10.1.1.0/InPlacely_10.1.1.0_Firefox.xpi"
+          "update_link": "https://github.com/KilimcininKorOglu/InPlacely/releases/download/v1.0.0/InPlacely_1.0.0_Firefox.xpi"
         }
       ]
     }
