@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.3] - 2026-05-13
+
+### Removed
+- Delete all keyboard shortcuts and hotkey UI
+
+### Changed
+- Consolidate update files to project root
+
+### Fixed
+- Fix release workflow sed pattern replacing XML declaration version
+
 ## [1.0.2] - 2026-05-13
 
 ### Changed
