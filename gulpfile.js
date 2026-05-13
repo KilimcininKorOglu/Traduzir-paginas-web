@@ -145,7 +145,7 @@ gulp.task("firefox-self-hosted", (cb) => {
       )
     );
     manifest.browser_specific_settings.gecko.update_url =
-      "https://raw.githubusercontent.com/KilimcininKorOglu/InPlacely/master/dist/firefox/updates.json";
+      "https://raw.githubusercontent.com/KilimcininKorOglu/InPlacely/master/updates.json";
     fs.writeFileSync(
       `build/${firefox_selfhosted_folder_name}/manifest.json`,
       JSON.stringify(manifest, null, 4),
